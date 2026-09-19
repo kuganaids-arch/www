@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MC_PLAYER — Minecraft, Discord, Web &amp; Automation Developer</title>
-  <meta property="og:title" content="MC_PLAYER — Minecraft, Discord, Web &amp; Automation Developer" />
+  <title>MC_PLAYER — Minecraft, Discord, Web & Automation Developer</title>
+  <meta property="og:title" content="MC_PLAYER — Minecraft, Discord, Web & Automation Developer" />
   <meta property="og:description" content="Minecraft, Discord, Web, WhatsApp & Telegram developer creating powerful bots, servers, websites and custom tools." />
   <meta property="og:url" content="https://www.mcplayer.worker.dev" />
   <meta property="og:type" content="website" />
@@ -33,7 +33,7 @@
       --fb:"Satoshi",sans-serif;
     }
 
-    html[data-theme="blue"] {
+    html[data-theme="blue"]{
       --a:#2563eb;
       --b:#06b6d4;
       --mid:#38bdf8;
@@ -47,7 +47,7 @@
       --muted:rgba(239,246,255,.58);
     }
 
-    html[data-theme="green"] {
+    html[data-theme="green"]{
       --a:#16a34a;
       --b:#14b8a6;
       --mid:#34d399;
@@ -61,7 +61,7 @@
       --muted:rgba(236,253,245,.58);
     }
 
-    html[data-theme="orange"] {
+    html[data-theme="orange"]{
       --a:#ea580c;
       --b:#f59e0b;
       --mid:#fbbf24;
@@ -75,36 +75,37 @@
       --muted:rgba(255,247,237,.58);
     }
 
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:var(--fb);background:var(--bg);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased}
-    a{text-decoration:none} img{max-width:100%;display:block}
-    .wrap{max-width:1100px;margin:0 auto;padding:0 40px;position:relative;z-index:5}
-    .gt{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-    .btn,.btn-o,.nav-cta,.mob-cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;transition:.25s ease}
-    .btn{padding:13px 28px;background:var(--grad);color:#fff;font-weight:700}
-    .btn:hover{opacity:.9;transform:translateY(-2px)}
-    .btn-o{padding:13px 28px;border:1.5px solid var(--border2);color:var(--text);background:transparent}
-    .btn-o:hover{border-color:rgba(var(--a-rgb),.45);background:rgba(var(--a-rgb),.06);transform:translateY(-2px)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:var(--fb);
+      background:var(--bg);
+      color:var(--text);
+      overflow-x:hidden;
+      -webkit-font-smoothing:antialiased;
+    }
 
-    nav{position:fixed;top:0;left:0;right:0;z-index:500;transition:background .3s,border-bottom .3s,backdrop-filter .3s}
-    nav.sc{background:rgba(9,0,12,.92);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
+    a{text-decoration:none}
+    img{display:block;max-width:100%}
+
+    .wrap{max-width:1100px;margin:0 auto;padding:0 40px;position:relative;z-index:5}
+
+    nav{
+      position:fixed;top:0;left:0;right:0;z-index:500;
+      transition:background .3s,backdrop-filter .3s,border-bottom .3s;
+    }
+    nav.sc{background:rgba(6,0,15,.92);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
     .nav-in{display:flex;align-items:center;justify-content:space-between;height:68px}
     .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
     .nav-logo img{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid transparent;background:linear-gradient(var(--bg),var(--bg)) padding-box,var(--grad) border-box;flex-shrink:0}
-    .nav-logo span{font-family:var(--fh);font-weight:900;font-size:1.2rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-.03em}
-    .nav-links{display:none;gap:26px;list-style:none;align-items:center;margin:0;padding:0}
-    .nav-links a{color:var(--muted);font-size:.875rem;font-weight:500;transition:color .2s}
+    .nav-logo span{font-family:var(--fh);font-weight:900;font-size:1.2rem;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-.03em}
+    .nav-links{display:none;gap:26px;list-style:none;align-items:center}
+    .nav-links a{color:var(--muted);text-decoration:none;font-size:.875rem;font-weight:500;transition:color .2s}
     .nav-links a:hover{color:var(--text)}
     .nav-right-d{display:none;align-items:center;gap:12px}
-    .nav-cta{padding:9px 22px;border:1.5px solid rgba(var(--b-rgb),.4);color:var(--text);background:rgba(var(--b-rgb),.06);font-size:.84rem;font-weight:500}
+    .nav-cta{padding:9px 22px;border-radius:50px;border:1.5px solid rgba(var(--a-rgb),.4);color:var(--text);text-decoration:none;font-size:.84rem;font-weight:500;transition:all .25s;background:rgba(var(--a-rgb),.12)}
     .nav-cta:hover{background:var(--grad);border-color:transparent;color:#fff}
-    .theme-switcher{display:flex;align-items:center;gap:7px;padding:5px 8px;border:1px solid var(--border);border-radius:50px;background:rgba(255,255,255,.04)}
-    .theme-dot{width:18px;height:18px;padding:0;border:2px solid transparent;border-radius:50%;cursor:pointer;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;background:transparent}
-    .theme-dot:hover{transform:scale(1.18)}
-    .theme-dot.active{border-color:#fff;box-shadow:0 0 0 2px var(--a), 0 0 12px var(--a)}
-    .theme-dot[data-theme="red"]{background:linear-gradient(135deg,#e11d48,#ff4d6d)}
-    .theme-dot[data-theme="blue"]{background:linear-gradient(135deg,#2563eb,#06b6d4)}
-    .theme-dot[data-theme="green"]{background:linear-gradient(135deg,#16a34a,#14b8a6)}
-    .theme-dot[data-theme="orange"]{background:linear-gradient(135deg,#ea580c,#f59e0b)}
     .hbg{display:flex;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;z-index:600}
     .hbg span{display:block;width:24px;height:2px;background:var(--text);border-radius:2px;transition:transform .32s,opacity .32s}
     .hbg.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
@@ -112,26 +113,30 @@
     .hbg.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
     @media(min-width:769px){.nav-links{display:flex}.nav-right-d{display:flex}.hbg{display:none}}
 
-    .mob-menu{position:fixed;inset:0;background:rgba(4,0,12,.97);backdrop-filter:blur(20px);z-index:400;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;transform:translateX(100%);transition:transform .3s ease}
+    .mob-menu{position:fixed;inset:0;background:rgba(4,0,12,.97);backdrop-filter:blur(20px);z-index:400;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;transform:translateX(100%);transition:transform .28s ease}
     .mob-menu.open{transform:translateX(0)}
-    .mob-menu a{font-family:var(--fh);font-size:1.9rem;font-weight:800;color:var(--text);letter-spacing:-.03em}
-    .mob-menu a:hover{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-    .mob-cta{padding:14px 38px;background:var(--grad);border-radius:999px;color:#fff!important;font-size:1.05rem!important}
-    .mob-menu .theme-switcher{margin-bottom:8px;transform:scale(1.25)}
+    .mob-menu a{font-family:var(--fh);font-size:1.9rem;font-weight:800;color:var(--text);text-decoration:none;letter-spacing:-.03em;transition:color .2s}
+    .mob-menu a:hover{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .mob-cta{padding:14px 38px;background:var(--grad);border-radius:50px;color:#fff!important;-webkit-text-fill-color:#fff!important;font-size:1.05rem!important}
 
-    .hero{min-height:100vh;display:flex;align-items:center;padding:110px 0 80px;position:relative;z-index:5}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:var(--grad);border-radius:50px;color:#fff;font-family:var(--fb);font-weight:700;font-size:.9rem;text-decoration:none;box-shadow:0 12px 30px rgba(var(--a-rgb),.35);transition:transform .2s,opacity .2s}
+    .btn:hover{opacity:.87;transform:translateY(-2px)}
+    .btn-o{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:transparent;border:1.5px solid var(--border2);border-radius:50px;color:var(--text);font-family:var(--fb);font-weight:700;font-size:.9rem;text-decoration:none;transition:all .2s}
+    .btn-o:hover{border-color:rgba(var(--b-rgb),.45);background:rgba(var(--b-rgb),.06);transform:translateY(-2px)}
+
+    .hero{min-height:100vh;display:flex;align-items:center;padding:110px 0 80px}
     .hero-grid{display:grid;grid-template-columns:1fr 380px;gap:64px;align-items:center}
-    .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(var(--a-rgb),.12);border:1px solid rgba(var(--a-rgb),.26);border-radius:50px;padding:6px 16px 6px 10px;font-size:.76rem;font-weight:700;color:var(--text)}
+    .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(var(--a-rgb),.12);border:1px solid rgba(var(--a-rgb),.26);border-radius:50px;padding:6px 16px 6px 10px;font-size:.76rem;font-weight:700;letter-spacing:.02em}
     .pdot{width:7px;height:7px;background:var(--mid);border-radius:50%;animation:pulse 2s infinite;flex-shrink:0}
     @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}
-    h1{font-family:var(--fh);font-size:clamp(2.8rem,5.5vw,5rem);font-weight:900;line-height:1.02;letter-spacing:-.04em;margin:18px 0 22px}
-    .tw-cursor{display:inline-block;width:3px;height:.85em;background:var(--b);vertical-align:middle;margin-left:3px;border-radius:2px;animation:blink .7s step-end infinite}
-    @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-    .hero-p{font-size:1.02rem;color:var(--muted);line-height:1.8;max-width:500px;margin:0 0 14px}
+    h1{font-family:var(--fh);font-size:clamp(2.8rem,5.5vw,5rem);font-weight:900;line-height:1.02;letter-spacing:-.04em;margin-bottom:22px;animation:fu .8s .1s ease both}
+    .gt{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero-p{font-size:1.02rem;color:var(--muted);line-height:1.8;max-width:500px;margin-bottom:14px;font-weight:400;animation:fu .8s .15s ease both}
     .hero-p strong{color:var(--text);font-weight:600}
-    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.04);border:1px solid var(--border2);border-radius:50px;padding:8px 18px;font-size:.8rem;font-weight:500;margin-bottom:18px;color:var(--text)}
-    .hero-acts{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.04);border:1px solid var(--border2);border-radius:50px;padding:8px 18px;font-size:.8rem;font-weight:500;margin-bottom:20px}
+    .hero-acts{display:flex;gap:12px;flex-wrap:wrap;animation:fu .8s .27s ease both}
 
+    .hcard{animation:fu .9s .15s ease both}
     .hcard-inner{background:var(--card);border:1px solid var(--border);border-radius:26px;padding:40px 28px 34px;text-align:center;backdrop-filter:blur(12px);position:relative;overflow:hidden;box-shadow:0 0 0 1px rgba(var(--b-rgb),.1),0 20px 60px rgba(var(--a-rgb),.15),inset 0 1px 0 rgba(255,255,255,.07)}
     .hcard-inner::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(var(--b-rgb),.55),transparent)}
     .pfp-wrap{position:relative;display:inline-block;margin-bottom:20px}
@@ -146,7 +151,7 @@
     .cb.gr{background:rgba(0,210,90,.09);border-color:rgba(0,210,90,.22);color:#4EE88F}
     .cb.yt{background:rgba(255,0,0,.1);border-color:rgba(255,0,0,.22);color:#FF6B6B}
     .cdiv{height:1px;background:var(--border);margin:0 0 18px}
-    .csocs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+    .csocs{display:flex;gap:8px;justify-content:center}
     .csoc{display:flex;align-items:center;gap:5px;padding:7px 13px;border-radius:9px;background:rgba(255,255,255,.05);border:1px solid var(--border);color:var(--muted);font-size:.73rem;font-weight:500}
     .csoc:hover{background:rgba(255,255,255,.1);color:var(--text)}
     .cfoot{margin-top:16px;font-size:.71rem;color:var(--muted);display:flex;align-items:center;justify-content:center;gap:5px}
@@ -155,31 +160,35 @@
     .stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
     .stat{text-align:center;padding:0 14px;border-right:1px solid var(--border)}
     .stat:last-child{border-right:none}
-    .sn{font-family:var(--fh);font-size:2.1rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;margin-bottom:4px;display:block}
+    .sn{font-family:var(--fh);font-size:2.1rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:4px;display:block}
     .sl{font-size:.74rem;color:var(--muted)}
 
     section{padding:96px 0;position:relative;z-index:5}
     .ey{display:inline-flex;align-items:center;gap:8px;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mid);margin-bottom:12px}
     .ey::before{content:"";display:inline-block;width:16px;height:1.5px;background:var(--mid)}
     .st{font-family:var(--fh);font-size:clamp(1.9rem,3.8vw,3.1rem);font-weight:900;letter-spacing:-.04em;line-height:1.08;margin-bottom:16px}
-    .sd{color:var(--muted);font-size:.98rem;line-height:1.8;max-width:540px}
+    .sd{color:var(--muted);font-size:.98rem;line-height:1.8;max-width:540px;font-weight:400}
 
-    .about-grid,.yt-grid,.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-top:52px}
-    .atext p,.yt-text p{color:var(--muted);font-size:.97rem;line-height:1.84;margin-bottom:14px}
-    .atext strong,.yt-text strong{color:var(--text);font-weight:600}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-top:52px}
+    .atext p{color:var(--muted);font-size:.97rem;line-height:1.84;margin-bottom:14px}
+    .atext strong{color:var(--text);font-weight:600}
     .mc-card{display:flex;align-items:center;gap:12px;background:rgba(var(--a-rgb),.1);border:1px solid rgba(var(--a-rgb),.22);border-radius:12px;padding:14px 18px;margin:22px 0 26px}
-    .mc-card h4{font-family:var(--fh);font-size:.9rem;font-weight:800;margin:0 0 2px}
+    .mc-card h4{font-family:var(--fh);font-size:.9rem;font-weight:800;margin-bottom:2px}
     .mc-card p{font-size:.75rem;color:var(--muted);margin:0;line-height:1.4}
     .hcards{display:flex;flex-direction:column;gap:12px}
     .hc{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 18px;display:flex;align-items:flex-start;gap:12px;transition:border-color .2s,transform .2s}
     .hc:hover{border-color:rgba(var(--b-rgb),.28);transform:translateX(4px)}
     .hc-ico{width:36px;height:36px;flex-shrink:0;background:rgba(var(--a-rgb),.13);border:1px solid rgba(var(--a-rgb),.22);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:.9rem}
-    .hc h4{font-family:var(--fh);font-size:.9rem;font-weight:800;margin:0 0 2px;letter-spacing:-.02em}
+    .hc h4{font-family:var(--fh);font-size:.9rem;font-weight:800;margin-bottom:2px;letter-spacing:-.02em}
     .hc p{color:var(--muted);font-size:.77rem;line-height:1.55;margin:0}
 
+    .yt-sec{background:transparent}
+    .yt-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:52px}
+    .yt-text p{color:var(--muted);font-size:.97rem;line-height:1.82;margin-bottom:14px}
+    .yt-text strong{color:var(--text);font-weight:600}
     .yt-srow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:24px 0 28px}
     .yt-stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:15px 12px;text-align:center}
-    .yt-stat span{font-family:var(--fh);font-size:1.4rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;display:block;line-height:1.2}
+    .yt-stat span{font-family:var(--fh);font-size:1.4rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;line-height:1.2}
     .yt-stat p{font-size:.7rem;color:var(--muted);margin:0}
     .yt-acts{display:flex;gap:10px;flex-wrap:wrap}
     .ytfs{display:flex;flex-direction:column;gap:12px}
@@ -188,9 +197,31 @@
     .ytf-ico{width:36px;height:36px;flex-shrink:0;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:.9rem}
     .ytf-r{background:rgba(255,0,0,.13);border:1px solid rgba(255,0,0,.22)}
     .ytf-p{background:rgba(var(--a-rgb),.13);border:1px solid rgba(var(--a-rgb),.22)}
-    .ytf-pk{background:rgba(var(--b-rgb),.1);border:1px solid rgba(var(--b-rgb),.2)}
-    .ytf h4{font-family:var(--fh);font-size:.9rem;font-weight:800;margin:0 0 2px;letter-spacing:-.02em}
+    .ytf-pk{background:rgba(var(--b-rgb),.10);border:1px solid rgba(var(--b-rgb),.2)}
+    .ytf h4{font-family:var(--fh);font-size:.9rem;font-weight:800;margin-bottom:2px;letter-spacing:-.02em}
     .ytf p{color:var(--muted);font-size:.77rem;line-height:1.55;margin:0}
+
+    .tl-sec{background-color:#090016;background-image:linear-gradient(180deg,rgba(var(--a-rgb),.06),rgba(var(--b-rgb),.025));}
+    .tl{margin-top:52px;position:relative}
+    .tl::before{content:"";position:absolute;left:19px;top:0;bottom:0;width:1.5px;background:linear-gradient(to bottom,var(--a),var(--b))}
+    .tl-item{display:flex;gap:24px;margin-bottom:32px}
+    .tl-item:last-child{margin-bottom:0}
+    .tl-dot{width:38px;height:38px;flex-shrink:0;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:.85rem;z-index:1;box-shadow:0 0 14px rgba(var(--a-rgb),.35);position:relative}
+    .tl-dot::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1px solid rgba(var(--b-rgb),.25);animation:ring-pulse 3s ease-in-out infinite}
+    .tl-dot.og{background:linear-gradient(135deg,#00C853,#69F0AE);box-shadow:0 0 14px rgba(0,200,83,.4)}
+    .tl-dot.og::after{border-color:rgba(0,200,83,.25)}
+    @keyframes ring-pulse{0%,100%{transform:scale(1);opacity:.6}50%{transform:scale(1.18);opacity:0}}
+    .tl-body{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:17px 20px;flex:1;transition:border-color .2s}
+    .tl-body:hover{border-color:rgba(var(--b-rgb),.26)}
+    .tl-yr{font-size:.68rem;font-weight:700;color:var(--mid);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;display:block}
+    .tl-body h3{font-family:var(--fh);font-size:.97rem;font-weight:800;margin-bottom:4px;letter-spacing:-.02em}
+    .tl-body p{color:var(--muted);font-size:.79rem;line-height:1.62;margin:0}
+    .tl-hl{background:rgba(var(--a-rgb),.06);border-color:rgba(var(--a-rgb),.22)}
+    .tl-og{background:rgba(0,200,83,.05);border-color:rgba(0,200,83,.22)}
+    .tl-tag{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:50px;font-size:.68rem;font-weight:600;margin-top:8px}
+    .tt-mc{background:rgba(0,200,83,.12);border:1px solid rgba(0,200,83,.25);color:#4EE88F}
+    .tt-sv{background:rgba(var(--a-rgb),.14);border:1px solid rgba(var(--a-rgb),.28);color:var(--mid)}
+    .tt-on{background:rgba(255,165,0,.12);border:1px solid rgba(255,165,0,.28);color:#FFB347}
 
     .svcs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:52px}
     .svc{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:28px 24px;position:relative;overflow:hidden;transition:transform .25s,border-color .25s}
@@ -200,8 +231,8 @@
     .svc>*{position:relative;z-index:1}
     .svc-n{font-size:.67rem;font-weight:700;letter-spacing:.13em;color:var(--mid);margin-bottom:16px;display:block;text-transform:uppercase;position:relative}
     .svc-ico{font-size:1.6rem;margin-bottom:12px;display:block}
-    .svc h3{font-family:var(--fh);font-size:1rem;font-weight:800;margin:0 0 8px;letter-spacing:-.03em}
-    .svc p{color:var(--muted);font-size:.8rem;line-height:1.64;margin:0}
+    .svc h3{font-family:var(--fh);font-size:1rem;font-weight:800;margin-bottom:8px;letter-spacing:-.03em}
+    .svc p{color:var(--muted);font-size:.8rem;line-height:1.64}
     .svc-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}
     .svc-tag{padding:3px 9px;background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:50px;font-size:.67rem;color:var(--muted);font-weight:500}
     .svc-new{border-color:rgba(var(--b-rgb),.3);background:rgba(var(--b-rgb),.03)}
@@ -212,12 +243,12 @@
     .wcard:hover{transform:translateY(-4px);border-color:rgba(var(--b-rgb),.28)}
     .wcard::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
     .wcard:hover::before{transform:scaleX(1)}
-    .wn{font-family:var(--fh);font-size:2.2rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;margin-bottom:7px;display:block}
-    .wcard h4{font-family:var(--fh);font-size:.95rem;font-weight:800;margin:0 0 7px;letter-spacing:-.02em}
-    .wcard p{color:var(--muted);font-size:.79rem;line-height:1.62;margin:0}
+    .wn{font-family:var(--fh);font-size:2.2rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:7px;display:block}
+    .wcard h4{font-family:var(--fh);font-size:.95rem;font-weight:800;margin-bottom:7px;letter-spacing:-.02em}
+    .wcard p{color:var(--muted);font-size:.79rem;line-height:1.62}
 
+    .skills-grid{display:grid;grid-template-columns:400px 1fr;gap:76px;align-items:start}
     #skills{background:var(--bg2)}
-    .skills-grid{grid-template-columns:400px 1fr;gap:76px}
     .sk-list{display:flex;flex-direction:column;gap:16px;margin-top:12px}
     .sk-row{display:flex;flex-direction:column;gap:7px}
     .sk-hd{display:flex;justify-content:space-between;align-items:center}
@@ -236,7 +267,7 @@
     .wk:hover{transform:translateY(-5px);border-color:rgba(var(--b-rgb),.32)}
     .wk-top{height:120px;display:flex;align-items:center;justify-content:center;font-size:2.7rem;position:relative}
     .wk-top::before{content:"";position:absolute;inset:0;opacity:.18}
-    .w1 .wk-top::before{background:linear-gradient(135deg,#7A00FF,#FF00F2)}
+    .w1 .wk-top::before{background:linear-gradient(135deg,var(--a),var(--b))}
     .w2 .wk-top::before{background:linear-gradient(135deg,#0072ff,#00c6ff)}
     .w3 .wk-top::before{background:linear-gradient(135deg,#f7971e,#ffd200)}
     .w4 .wk-top::before{background:linear-gradient(135deg,#11998e,#38ef7d)}
@@ -244,15 +275,15 @@
     .w6 .wk-top::before{background:linear-gradient(135deg,#4776e6,#8e54e9)}
     .wk-body{padding:16px 18px}
     .wk-type{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);margin-bottom:4px;display:block}
-    .wk-body h3{font-family:var(--fh);font-size:.94rem;font-weight:800;margin:0 0 5px;letter-spacing:-.02em}
-    .wk-body p{color:var(--muted);font-size:.77rem;line-height:1.56;margin:0}
+    .wk-body h3{font-family:var(--fh);font-size:.94rem;font-weight:800;margin-bottom:5px;letter-spacing:-.02em}
+    .wk-body p{color:var(--muted);font-size:.77rem;line-height:1.56}
 
-    .ch-card{background:rgba(255,255,255,.03);border:1px solid var(--border2);border-radius:24px;padding:52px 48px;margin-top:52px;position:relative;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr;gap:32px}
+    .ch-card{background:rgba(255,255,255,.03);border:1px solid var(--border2);border-radius:24px;padding:52px 48px;margin-top:52px;position:relative;overflow:hidden;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
     .ch-card::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(var(--a-rgb),.6),rgba(var(--b-rgb),.6),transparent)}
     .ch-card::after{content:"";position:absolute;inset:0;background:var(--grad);opacity:.02;pointer-events:none}
     .ch-logo{display:flex;align-items:center;gap:14px;margin-bottom:20px}
-    .ch-logo-icon{width:52px;height:52px;border-radius:14px;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;box-shadow:0 0 24px rgba(var(--a-rgb),.32)}
-    .ch-logo-text{font-family:var(--fh);font-size:1.7rem;font-weight:900;letter-spacing:-.04em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .ch-logo-icon{width:52px;height:52px;border-radius:14px;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;box-shadow:0 0 24px rgba(var(--a-rgb),.25)}
+    .ch-logo-text{font-family:var(--fh);font-size:1.7rem;font-weight:900;letter-spacing:-.04em;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
     .ch-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(255,165,0,.12);border:1px solid rgba(255,165,0,.28);border-radius:50px;padding:5px 14px;font-size:.72rem;font-weight:700;color:#FFB347}
     .ch-tag::before{content:"";width:7px;height:7px;background:#FFB347;border-radius:50%;animation:pulse 2s infinite;flex-shrink:0}
     .ch-desc{color:var(--muted);font-size:.97rem;line-height:1.8;margin-bottom:22px}
@@ -261,7 +292,7 @@
     .ch-feat{display:flex;align-items:flex-start;gap:12px;background:rgba(var(--a-rgb),.07);border:1px solid rgba(var(--a-rgb),.14);border-radius:12px;padding:14px 16px;transition:border-color .2s,transform .2s}
     .ch-feat:hover{border-color:rgba(var(--a-rgb),.3);transform:translateX(4px)}
     .ch-feat-ico{width:34px;height:34px;flex-shrink:0;background:rgba(var(--a-rgb),.18);border:1px solid rgba(var(--a-rgb),.3);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1rem}
-    .ch-feat h4{font-family:var(--fh);font-size:.88rem;font-weight:800;margin:0 0 2px;letter-spacing:-.02em}
+    .ch-feat h4{font-family:var(--fh);font-size:.88rem;font-weight:800;margin-bottom:2px;letter-spacing:-.02em}
     .ch-feat p{color:var(--muted);font-size:.76rem;line-height:1.5;margin:0}
     .ch-coming{display:inline-flex;align-items:center;gap:8px;background:rgba(255,165,0,.1);border:1px solid rgba(255,165,0,.25);border-radius:10px;padding:11px 18px;font-size:.84rem;font-weight:600;color:#FFB347}
 
@@ -269,19 +300,19 @@
     .fi{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:border-color .2s}
     .fi.open{border-color:rgba(var(--b-rgb),.28)}
     .fq{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;cursor:pointer;font-family:var(--fh);font-weight:800;font-size:.92rem;gap:14px;letter-spacing:-.02em}
-    .farr{width:20px;height:20px;flex-shrink:0;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:transform .2s ease}
+    .farr{width:20px;height:20px;flex-shrink:0;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:transform .22s ease}
     .fi.open .farr{transform:rotate(180deg);background:rgba(var(--a-rgb),.2);border-color:rgba(var(--a-rgb),.3)}
     .fa{max-height:0;overflow:hidden;transition:max-height .42s ease}
     .fi.open .fa{max-height:200px}
-    .fa p{padding:0 20px 17px;color:var(--muted);font-size:.86rem;line-height:1.76;margin:0}
+    .fa p{padding:0 20px 17px;color:var(--muted);font-size:.86rem;line-height:1.76}
 
     .ct-outer{background:var(--card);border:1px solid var(--border);border-radius:28px;padding:66px 56px;text-align:center;position:relative;overflow:hidden;margin-top:52px}
     .ct-outer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(var(--b-rgb),.62),transparent)}
-    .ct-outer::after{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(var(--a-rgb),.07) 0%,transparent 65%);pointer-events:none}
+    .ct-outer::after{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(var(--a-rgb),.07)0%,transparent 65%);pointer-events:none}
     .ct-title{font-family:var(--fh);font-size:1.6rem;font-weight:900;margin-bottom:10px;letter-spacing:-.04em}
     .ct-sub{color:var(--muted);font-size:.94rem;max-width:450px;margin:0 auto;line-height:1.74}
     .ct-methods{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:36px;position:relative;z-index:1}
-    .cm{display:flex;align-items:center;gap:10px;padding:14px 22px;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:13px;text-decoration:none;color:var(--text);font-size:.85rem;font-weight:600}
+    .cm{display:flex;align-items:center;gap:10px;padding:14px 22px;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:13px;text-decoration:none;color:var(--text);font-size:.85rem;font-weight:600;transition:all .2s}
     .cm:hover{background:rgba(255,255,255,.09);border-color:rgba(var(--b-rgb),.32);transform:translateY(-3px)}
     .cm-ico{width:35px;height:35px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
     .ci-dc{background:rgba(88,101,242,.18);border:1px solid rgba(88,101,242,.3)}
@@ -293,21 +324,80 @@
     .ft{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
     .ft-logo{display:flex;align-items:center;gap:8px;text-decoration:none}
     .ft-logo img{width:26px;height:26px;border-radius:50%;object-fit:cover;border:2px solid transparent;background:linear-gradient(var(--bg),var(--bg)) padding-box,var(--grad) border-box}
-    .ft-logo span{font-family:var(--fh);font-weight:900;font-size:.98rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-.03em}
+    .ft-logo span{font-family:var(--fh);font-weight:900;font-size:.98rem;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-.03em}
     .ft-copy{font-size:.74rem;color:var(--muted)}
     .ft-links{display:flex;gap:20px}
-    .ft-links a{font-size:.74rem;color:var(--muted);transition:color .2s}
+    .ft-links a{font-size:.74rem;color:var(--muted);text-decoration:none;transition:color .2s}
     .ft-links a:hover{color:var(--text)}
 
+    @keyframes fu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    .rv{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease}
+    .rv.vi{opacity:1;transform:translateY(0)}
+    .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}
+
+    @media(max-width:1024px){
+      .wrap{padding:0 28px}
+      .hero-grid{grid-template-columns:1fr;gap:40px}
+      .hcard{max-width:360px;margin:0 auto;order:-1}
+      .about-grid{grid-template-columns:1fr;gap:40px}
+      .skills-grid{grid-template-columns:1fr;gap:40px}
+      .svcs-grid{grid-template-columns:1fr 1fr}
+      .why-grid{grid-template-columns:1fr 1fr}
+      .work-grid{grid-template-columns:1fr 1fr}
+      .yt-grid{grid-template-columns:1fr;gap:40px}
+      .ch-card{grid-template-columns:1fr;gap:36px;padding:36px 28px}
+    }
+    @media(max-width:768px){
+      .wrap{padding:0 18px}
+      section{padding:68px 0}
+      .stats-grid{grid-template-columns:repeat(2,1fr)}
+      .stat:nth-child(2){border-right:none}
+      .stat:nth-child(3){border-top:1px solid var(--border);padding-top:20px}
+      .stat:nth-child(4){border-top:1px solid var(--border);padding-top:20px;border-right:none}
+      .svcs-grid{grid-template-columns:1fr}
+      .why-grid{grid-template-columns:1fr}
+      .work-grid{grid-template-columns:1fr}
+      .ct-outer{padding:36px 18px}
+      .ct-methods{flex-direction:column;align-items:stretch}
+      .ft{flex-direction:column;text-align:center;align-items:center}
+      .ft-links{justify-content:center}
+      .yt-grid{grid-template-columns:1fr}
+      .nav-right-d{display:none!important}
+    }
+    @media(max-width:480px){
+      h1{font-size:2.4rem}
+      .hero-acts{flex-direction:column}
+      .btn,.btn-o{justify-content:center}
+      .hcard-inner{padding:28px 16px 24px}
+      .pfp{width:100px;height:100px}
+      .ch-card{padding:28px 18px}
+    }
+
+    .hc-ico svg,.svc-ico svg{color:rgba(200,160,255,.9);stroke:rgba(200,160,255,.9)}
+    .ytf-ico svg{color:rgba(200,160,255,.9);stroke:rgba(200,160,255,.9)}
+    .ch-feat-ico svg{color:rgba(160,120,255,.9);stroke:rgba(160,120,255,.9)}
+    .tl-dot svg{color:#fff;stroke:#fff}
+    .wk-top svg{opacity:.9}
+    .svc-ico{display:flex;align-items:center;justify-content:flex-start;height:32px;margin-bottom:14px}
+    .hc-ico{display:flex;align-items:center;justify-content:center}
+    .ch-feat-ico{display:flex;align-items:center;justify-content:center}
+    .wn svg{display:block;margin:0 auto 7px}
+
+    .st .gt{background-size:200% 100%;animation:shimmer 4s linear infinite}
+    @keyframes shimmer{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+
     #scroll-bar{position:fixed;top:0;left:0;height:2.5px;width:0%;z-index:9999;background:linear-gradient(90deg,var(--a),var(--mid),var(--b));box-shadow:0 0 10px rgba(var(--b-rgb),.6),0 0 4px rgba(var(--a-rgb),.8);transition:width .05s linear;pointer-events:none;border-radius:0 2px 2px 0}
+
     #btt{position:fixed;bottom:28px;right:28px;z-index:300;width:44px;height:44px;border-radius:50%;background:var(--grad);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(var(--a-rgb),.45);opacity:0;transform:translateY(12px);transition:opacity .3s,transform .3s;pointer-events:none}
     #btt.show{opacity:1;transform:translateY(0);pointer-events:auto}
     #btt:hover{transform:translateY(-3px)!important;box-shadow:0 6px 26px rgba(var(--b-rgb),.55)}
 
-    .bg-gradient{position:fixed;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse 70% 50% at 20% 20%, rgba(var(--a-rgb),.13) 0%, transparent 60%),radial-gradient(ellipse 60% 60% at 80% 80%, rgba(var(--b-rgb),.10) 0%, transparent 60%),radial-gradient(ellipse 50% 40% at 50% 50%, rgba(var(--mid-rgb),.06) 0%, transparent 60%);animation:bgshift 18s ease-in-out infinite alternate}
-    @keyframes bgshift{0%{opacity:1;filter:hue-rotate(0deg)}50%{opacity:.85;filter:hue-rotate(15deg)}100%{opacity:1;filter:hue-rotate(-10deg)}}
-    #bg-canvas{position:fixed;inset:0;z-index:0;pointer-events:none}
-    .grain{position:fixed;inset:0;z-index:2;pointer-events:none;opacity:.018;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='table' tableValues='0 0.12'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px}
+    .tw-cursor{display:inline-block;width:3px;height:.85em;background:var(--b);vertical-align:middle;margin-left:3px;border-radius:2px;animation:blink .7s step-end infinite}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+
+    .nav-links a.active{color:var(--text)!important;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+    .sec-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(var(--a-rgb),.3),rgba(var(--b-rgb),.3),transparent);margin:0;border:none;position:relative;z-index:5}
 
     .trust-strip{padding:26px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(255,255,255,.02);position:relative;z-index:5}
     .trust-inner{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}
@@ -316,6 +406,8 @@
     .trust-icon{width:34px;height:34px;border-radius:9px;background:rgba(var(--a-rgb),.12);border:1px solid rgba(var(--a-rgb),.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s,border-color .2s}
     .trust-badge:hover .trust-icon{background:rgba(var(--a-rgb),.22);border-color:rgba(var(--a-rgb),.38)}
     .trust-sep{width:1px;height:22px;background:var(--border);flex-shrink:0}
+    @media(max-width:768px){.trust-inner{gap:20px}.trust-sep{display:none}}
+
     .marquee-section{overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:18px 0;background:rgba(255,255,255,.015);position:relative;z-index:5}
     .marquee-track{display:flex;width:max-content;animation:marquee 30s linear infinite;will-change:transform}
     .marquee-track:hover{animation-play-state:paused}
@@ -324,41 +416,46 @@
     .marquee-item:hover{color:var(--text)}
     .marquee-item svg{flex-shrink:0;opacity:.65}
     .marquee-item:hover svg{opacity:1}
-    .sec-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(var(--a-rgb),.3),rgba(var(--b-rgb),.3),transparent);margin:0;border:none;position:relative;z-index:5}
-    :focus-visible{outline:2px solid var(--mid);outline-offset:2px}
 
-    @media(max-width:1024px){
-      .wrap{padding:0 28px}
-      .hero-grid,.about-grid,.yt-grid,.skills-grid{grid-template-columns:1fr;gap:40px}
-      .hcard{max-width:360px;margin:0 auto;order:-1}
-      .svcs-grid,.why-grid,.work-grid{grid-template-columns:1fr 1fr}
-      .ch-card{grid-template-columns:1fr;gap:36px;padding:36px 28px}
-    }
-    @media(max-width:768px){
-      .wrap{padding:0 18px}
-      .nav-right-d{display:none!important}
-      section{padding:68px 0}
-      .stats-grid{grid-template-columns:repeat(2,1fr)}
-      .stat:nth-child(2){border-right:none}
-      .stat:nth-child(3),.stat:nth-child(4){border-top:1px solid var(--border);padding-top:20px}
-      .svcs-grid,.why-grid,.work-grid{grid-template-columns:1fr}
-      .ct-outer{padding:36px 18px}
-      .ct-methods{flex-direction:column;align-items:stretch}
-      .ft{flex-direction:column;text-align:center;align-items:center}
-      .ft-links{justify-content:center}
-      .trust-inner{gap:20px}.trust-sep{display:none}
-    }
-    @media(max-width:480px){h1{font-size:2.4rem}.hero-acts{flex-direction:column}.btn,.btn-o{justify-content:center}.hcard-inner{padding:28px 16px 24px}.pfp{width:100px;height:100px}.ch-card{padding:28px 18px}}
+    html {scrollbar-width: thin;scrollbar-color: var(--a) transparent;}
+    ::-webkit-scrollbar {width: 6px;height:6px}
+    ::-webkit-scrollbar-track {background:transparent}
+    ::-webkit-scrollbar-thumb {background:linear-gradient(180deg,var(--a) 0%, var(--mid) 50%, var(--b) 100%);border-radius:100px;border:none;transition:background .3s}
+    ::-webkit-scrollbar-thumb:hover {background:linear-gradient(180deg,#9A22FF 0%, #CC22FA 50%, #FF22F4 100%)}
+    ::-webkit-scrollbar-corner {background: transparent}
+    .marquee-section::-webkit-scrollbar {display:none}
+    .marquee-section {scrollbar-width:none}
 
-    html{scrollbar-width:thin;scrollbar-color:var(--a) transparent}
-    ::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--a) 0%,var(--mid) 50%,var(--b) 100%);border-radius:100px;border:none;transition:background .3s}::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,#ff5a7c 0%,#ff7aa0 50%,#ff9dad 100%)}::-webkit-scrollbar-corner{background:transparent}.marquee-section::-webkit-scrollbar{display:none}.marquee-section{scrollbar-width:none}
+    /* Theme switcher */
+    .theme-switcher{display:flex;align-items:center;gap:7px;padding:5px 8px;border:1px solid var(--border);border-radius:50px;background:rgba(255,255,255,.04)}
+    .theme-dot{width:18px;height:18px;padding:0;border:2px solid transparent;border-radius:50%;cursor:pointer;transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;background:var(--grad)}
+    .theme-dot:hover{transform:scale(1.18)}
+    .theme-dot.active{border-color:#fff;box-shadow:0 0 0 2px var(--a), 0 0 12px var(--a)}
+    .theme-dot[data-theme="red"]{background:linear-gradient(135deg,#e11d48,#ff4d6d)}
+    .theme-dot[data-theme="blue"]{background:linear-gradient(135deg,#2563eb,#06b6d4)}
+    .theme-dot[data-theme="green"]{background:linear-gradient(135deg,#16a34a,#14b8a6)}
+    .theme-dot[data-theme="orange"]{background:linear-gradient(135deg,#ea580c,#f59e0b)}
+    .mob-menu .theme-switcher{display:flex;margin-bottom:8px;transform:scale(1.25)}
+
+    .bg-gradient{position:fixed;inset:0;z-index:1;pointer-events:none;background:
+      radial-gradient(ellipse 70% 50% at 20% 20%, rgba(var(--a-rgb),.13) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 60% at 80% 80%, rgba(var(--b-rgb),.10) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 40% at 50% 50%, rgba(var(--mid-rgb),.06) 0%, transparent 60%);
+      animation:bgshift 18s ease-in-out infinite alternate;
+    }
+    @keyframes bgshift{0%{opacity:1;filter:hue-rotate(0deg)}50%{opacity:.85;filter:hue-rotate(15deg)}100%{opacity:1;filter:hue-rotate(-10deg)}}
+    .grain{position:fixed;inset:0;z-index:2;pointer-events:none;opacity:.018;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='table' tableValues='0 0.18'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px}
+    #bg-canvas{position:fixed;inset:0;z-index:0;pointer-events:none}
   </style>
 </head>
 <body>
   <div id="scroll-bar"></div>
   <button id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6" /></svg>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
+
+  <div id="cur"></div>
+  <div id="cur-ring"></div>
 
   <canvas id="bg-canvas"></canvas>
   <div class="bg-gradient"></div>
@@ -368,10 +465,9 @@
     <div class="wrap">
       <div class="nav-in">
         <a href="#" class="nav-logo">
-          <img src="" alt="MC_PLAYER logo" />
+          <img src="profile.webp" alt="MC_PLAYER logo" />
           <span>MC_PLAYER</span>
         </a>
-
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -381,7 +477,6 @@
           <li><a href="#upcoming">Upcoming</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-
         <div class="nav-right-d">
           <div class="theme-switcher" role="group" aria-label="Choose colour theme">
             <button class="theme-dot active" data-theme="red" aria-label="Red theme" title="Red theme"></button>
@@ -391,7 +486,6 @@
           </div>
           <a href="https://discord.gg/8GsrmXScDV" target="_blank" class="nav-cta">Join Discord</a>
         </div>
-
         <button class="hbg" id="hbg" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
@@ -421,37 +515,36 @@
       <div class="hero-grid">
         <div>
           <div class="hero-tag"><span class="pdot"></span>Open for Projects &amp; Collabs</div>
-          <h1>Building Powerful<br /><span class="gt">Digital</span><br /><span id="tw-text">Tools</span><span class="tw-cursor"></span></h1>
+          <h1>Building Powerful<br><span class="gt">Digital</span><br><span id="tw-text">Tools</span><span class="tw-cursor"></span></h1>
           <p class="hero-p">Minecraft, Discord, Web, WhatsApp &amp; Telegram developer creating powerful bots, servers, websites and custom tools.</p>
           <div class="hero-badge">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--mid)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
             3+ Years Experience · 25+ Server Projects &amp; Collaborations
           </div>
           <div class="hero-acts">
-            <a href="#services" class="btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>View Services</a>
+            <a href="#services" class="btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>View Services</a>
             <a href="#contact" class="btn-o">Get in Touch</a>
           </div>
         </div>
-
         <div class="hcard">
           <div class="hcard-inner">
             <div class="pfp-wrap">
-              <img class="pfp" src="" alt="MC_PLAYER profile" />
+              <img class="pfp" src="profile.webp" alt="MC_PLAYER profile" />
             </div>
             <div class="cname">MC_PLAYER</div>
             <div class="crole">Minecraft · Discord · Web · WhatsApp · Telegram Developer</div>
             <div class="cbadges">
-              <span class="cb gr"><svg width="7" height="7" viewBox="0 0 7 7" style="margin-right:4px;vertical-align:middle"><circle cx="3.5" cy="3.5" r="3.5" fill="#4EE88F"/></svg>Available</span>
-              <span class="cb yt"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="none" style="vertical-align:middle"><path d="M23.5 6.2A3 3 0 0 0 21.4 4.1C19.5 3.7 12 3.7 12 3.7s-7.5 0-9.4.4A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8A3 3 0 0 0 2.6 19.9c1.9.4 9.4.4 9.4.4s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.8 15.5v-7l6.3 3.5-6.3 3.5z" fill="#FF0000"/></svg>YouTube</span>
-              <span class="cb hl"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><path d="M12 2v5m0 10v5M4.9 4.9l3.5 3.5m7.2 7.2l3.5 3.5M2 12h5m10 0h5M4.9 19.1l3.5-3.5m7.2-7.2l3.5-3.5"/></svg>Creator</span>
+              <span class="cb gr"><svg width="7" height="7" viewBox="0 0 7 7" style="margin-right:4px;flex-shrink:0"><circle cx="3.5" cy="3.5" r="3.5" fill="#4EE88F"/></svg>Available</span>
+              <span class="cb yt"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="none"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.376.505A3.016 3.016 0 0 0 .502 6.186C0 8.074 0 12 0 12s0 3.926.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.376-.505a3.016 3.016 0 0 0 2.122-2.136C24 15.926 24 12 24 12s0-3.926-.502-5.814z" fill="#FF0000"/><path d="M9.75 15.5l6.25-3.5-6.25-3.5v7z" fill="#fff"/></svg>YT</span>
+              <span class="cb hl"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>Dev</span>
             </div>
             <div class="cdiv"></div>
             <div class="csocs">
-              <a href="https://discord.gg/8GsrmXScDV" target="_blank" class="csoc"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.37a19.79 19.79 0 0 0-4.89-1.5c-.2.38-.42.9-.58 1.31a18.4 18.4 0 0 0-9.65 0c-.16-.42-.38-.93-.58-1.31A19.79 19.79 0 0 0 3.7 4.37C1.76 8.03.95 11.57 1.14 15.08A19.98 19.98 0 0 0 8.9 17.1c.45-.63.85-1.3 1.2-2.06-.65-.26-1.27-.57-1.86-.96.16-.11.31-.23.46-.35.58.28 1.2.52 1.83.7.63-.18 1.28-.42 1.88-.72.15.12.3.24.46.35-.6.39-1.22.7-1.87.96.35.76.75 1.43 1.2 2.06A19.98 19.98 0 0 0 22.86 15.08c.19-3.51-.57-7.05-2.56-10.71zM9.89 13.01c-.9 0-1.64-.82-1.64-1.83s.74-1.83 1.64-1.83c.9 0 1.64.82 1.64 1.83s-.74 1.83-1.64 1.83zm4.22 0c-.9 0-1.64-.82-1.64-1.83s.74-1.83 1.64-1.83c.9 0 1.64.82 1.64 1.83s-.74 1.83-1.64 1.83z"/></svg>Discord</a>
-              <a href="https://youtube.com/@MC_PLAYER_GGS" target="_blank" class="csoc"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2A3 3 0 0 0 21.4 4.1C19.5 3.7 12 3.7 12 3.7s-7.5 0-9.4.4A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8A3 3 0 0 0 2.6 19.9c1.9.4 9.4.4 9.4.4s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.8 15.5v-7l6.3 3.5-6.3 3.5z"/></svg>YouTube</a>
-              <a href="mailto:rama8rama8kugan@gmail.com" class="csoc"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M3 6l9 7 9-7"/></svg>Email</a>
+              <a href="https://discord.gg/8GsrmXScDV" target="_blank" class="csoc"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.5c-.23.43-.5.99-.68 1.42a18.24 18.24 0 0 0-10.36 0c-.18-.43-.46-.99-.7-1.42A19.76 19.76 0 0 0 3.684 4.37C1.79 8.1.97 11.72 1.2 15.26A19.99 19.99 0 0 0 9.06 17.5c.63-.87 1.2-1.79 1.68-2.76-.92-.35-1.8-.8-2.63-1.38.22-.15.43-.32.63-.49 2.32 1.09 4.87 1.09 7.2 0 .2.17.41.34.63.49-.83.58-1.7 1.03-2.63 1.38.48.97 1.05 1.89 1.68 2.76a20 20 0 0 0 7.86-2.24c.33-4.08-.57-7.67-2.45-10.89zM9.72 13.13c-.9 0-1.63-.82-1.63-1.83s.74-1.83 1.63-1.83c.9 0 1.64.82 1.64 1.83s-.74 1.83-1.64 1.83zm4.56 0c-.9 0-1.63-.82-1.63-1.83s.73-1.83 1.63-1.83c.9 0 1.63.82 1.63 1.83s-.73 1.83-1.63 1.83z"/></svg>Discord</a>
+              <a href="https://youtube.com/@MC_PLAYER_GGS" target="_blank" class="csoc"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.376.505A3.016 3.016 0 0 0 .502 6.186C0 8.074 0 12 0 12s0 3.926.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.376-.505a3.016 3.016 0 0 0 2.122-2.136C24 15.926 24 12 24 12s0-3.926-.502-5.814zM9.75 15.5v-7l6.25 3.5-6.25 3.5z"/></svg>YouTube</a>
+              <a href="mailto:rama8rama8kugan@gmail.com" class="csoc"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M4 6l8 7 8-7"/></svg>Email</a>
             </div>
-            <div class="cfoot"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="var(--mid)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Discord: MC_PLAYER · This site is built by me 😄</div>
+            <div class="cfoot"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Discord: MC_PLAYER · This site is built by me 😄</div>
           </div>
         </div>
       </div>
@@ -461,10 +554,10 @@
   <div class="stats-strip">
     <div class="wrap">
       <div class="stats-grid">
-        <div class="stat"><span class="sn" data-count="25" data-suffix="+">25+</span><span class="sl">Server Projects</span></div>
-        <div class="stat"><span class="sn" data-count="3" data-suffix="+">3+</span><span class="sl">Years Experience</span></div>
-        <div class="stat"><span class="sn" data-count="100" data-suffix="%">100%</span><span class="sl">Client Satisfaction</span></div>
-        <div class="stat"><span class="sn" data-text="24/7">24/7</span><span class="sl">Ongoing Support</span></div>
+        <div class="stat rv"><span class="sn" data-count="25" data-suffix="+">25+</span><span class="sl">Server Projects</span></div>
+        <div class="stat rv d1"><span class="sn" data-count="3" data-suffix="+">3+</span><span class="sl">Years Experience</span></div>
+        <div class="stat rv d2"><span class="sn" data-count="100" data-suffix="%">100%</span><span class="sl">Client Satisfaction</span></div>
+        <div class="stat rv d3"><span class="sn" data-text="24/7">24/7</span><span class="sl">Ongoing Support</span></div>
       </div>
     </div>
   </div>
@@ -472,112 +565,108 @@
   <div class="trust-strip">
     <div class="wrap">
       <div class="trust-inner">
-        <div class="trust-badge"><div class="trust-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>25+ Projects Delivered</div>
+        <div class="trust-badge"><div class="trust-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>25+ Projects Delivered</div>
         <div class="trust-sep"></div>
-        <div class="trust-badge"><div class="trust-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div>25+ Server Projects &amp; Collaborations</div>
+        <div class="trust-badge"><div class="trust-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>25+ Server Projects &amp; Collaborations</div>
         <div class="trust-sep"></div>
-        <div class="trust-badge"><div class="trust-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>3+ Years Experience</div>
+        <div class="trust-badge"><div class="trust-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>3+ Years Experience</div>
         <div class="trust-sep"></div>
-        <div class="trust-badge"><div class="trust-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div>100% Satisfaction</div>
+        <div class="trust-badge"><div class="trust-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div>100% Satisfaction</div>
         <div class="trust-sep"></div>
-        <div class="trust-badge"><div class="trust-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13A4 4 0 0 1 16 13"/></svg></div>Bots, Servers &amp; Custom Tools</div>
+        <div class="trust-badge"><div class="trust-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>Bots, Servers &amp; Custom Tools</div>
       </div>
     </div>
   </div>
 
   <div class="marquee-section">
     <div class="marquee-track">
-      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8l-6-6H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14z"/><path d="M14 2v6h6"/><path d="M8 11h8M8 15h8"/></svg>HTML</span>
-      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7H14.5a3.5 3.5 0 0 1 0 7H6"/></svg>CSS</span>
-      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3h-6a4 4 0 0 0-4 4v12a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V7a4 4 0 0 0-4-4z"/><path d="M8 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h4"/></svg>JavaScript</span>
-      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7H14.5a3.5 3.5 0 0 1 0 7H6"/></svg>Discord Bots</span>
-      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5-5 5 5"/><path d="M12 5v12"/></svg>Automation</span>
-      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>WhatsApp</span>
-      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg>Telegram</span>
-      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9 9 0 0 1 9 9 9 9 0 0 1-9 9 9 9 0 0 1-9-9z"/><path d="M8 12h8"/></svg>Web</span>
-      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8l-6-6H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14z"/><path d="M14 2v6h6"/><path d="M8 11h8M8 15h8"/></svg>HTML</span>
-      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7H14.5a3.5 3.5 0 0 1 0 7H6"/></svg>CSS</span>
-      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3h-6a4 4 0 0 0-4 4v12a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V7a4 4 0 0 0-4-4z"/><path d="M8 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h4"/></svg>JavaScript</span>
-      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7H14.5a3.5 3.5 0 0 1 0 7H6"/></svg>Discord Bots</span>
+      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V7a6 6 0 0 1 12 0v2"/><rect x="3" y="9" width="18" height="12" rx="2"/></svg> Minecraft</span>
+      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Discord Bots</span>
+      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2V8"/><path d="M12 16V22"/><path d="M4.93 4.93L9 9"/><path d="M15 15L19.07 19.07"/><path d="M2 12H8"/><path d="M16 12H22"/><path d="M4.93 19.07L9 15"/><path d="M15 9L19.07 4.93"/></svg> Web Dev</span>
+      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V7a6 6 0 0 1 12 0v2"/><rect x="3" y="9" width="18" height="12" rx="2"/></svg> Automation</span>
+      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg> WhatsApp &amp; Telegram</span>
+      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Support</span>
+      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V7a6 6 0 0 1 12 0v2"/><rect x="3" y="9" width="18" height="12" rx="2"/></svg> Minecraft</span>
+      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Discord Bots</span>
+      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2V8"/><path d="M12 16V22"/><path d="M4.93 4.93L9 9"/><path d="M15 15L19.07 19.07"/><path d="M2 12H8"/><path d="M16 12H22"/><path d="M4.93 19.07L9 15"/><path d="M15 9L19.07 4.93"/></svg> Web Dev</span>
+      <span class="marquee-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V7a6 6 0 0 1 12 0v2"/><rect x="3" y="9" width="18" height="12" rx="2"/></svg> Automation</span>
     </div>
   </div>
 
-  <hr class="sec-divider" />
+  <hr class="sec-divider">
 
   <section id="projects">
     <div class="wrap">
-      <div class="ey">Portfolio</div>
-      <h2 class="st">Completed <span class="gt">Projects</span></h2>
-      <p class="sd">25+ completed projects and collaborations across Minecraft servers, development, moderation, and administration.</p>
+      <div class="ey rv">Portfolio</div>
+      <h2 class="st rv">Completed <span class="gt">Projects</span></h2>
+      <p class="sd rv">25+ completed projects and collaborations across Minecraft servers, development, moderation, and administration.</p>
       <div class="about-grid" style="margin-top:52px">
         <div class="hcards">
-          <div class="hc"><div><h4>Tamilnadu SMP — Owner</h4><p>Owned and managed the project.</p></div></div>
-          <div class="hc"><div><h4>Saro SMP — Dev</h4><p>Minecraft development and server configuration.</p></div></div>
-          <div class="hc"><div><h4>Yamalogam — Dev + Admin</h4><p>Development, administration, and community support.</p></div></div>
-          <div class="hc"><div><h4>Mazhaicraft — Dev</h4><p>Minecraft server development.</p></div></div>
-          <div class="hc"><div><h4>BF Joker — Dev</h4><p>Minecraft development.</p></div></div>
-          <div class="hc"><div><h4>Venki YouTuber — Dev</h4><p>Development support for the creator project.</p></div></div>
-          <div class="hc"><div><h4>Bamboo SMP — Dev</h4><p>Minecraft server development.</p></div></div>
-          <div class="hc"><div><h4>Storm MC — Dev</h4><p>Minecraft server development.</p></div></div>
+          <div class="hc rv"><div><h4>Tamilnadu SMP — Owner</h4><p>Owned and managed the project.</p></div></div>
+          <div class="hc rv d1"><div><h4>Saro SMP — Dev</h4><p>Minecraft development and server configuration.</p></div></div>
+          <div class="hc rv d2"><div><h4>Yamalogam — Dev + Admin</h4><p>Development, administration, and community support.</p></div></div>
+          <div class="hc rv d3"><div><h4>Mazhaicraft — Dev</h4><p>Minecraft server development.</p></div></div>
+          <div class="hc rv d4"><div><h4>BF Joker — Dev</h4><p>Minecraft development.</p></div></div>
+          <div class="hc rv d5"><div><h4>Venki YouTuber — Dev</h4><p>Development support for the creator project.</p></div></div>
+          <div class="hc rv"><div><h4>Bamboo SMP — Dev</h4><p>Minecraft server development.</p></div></div>
+          <div class="hc rv d1"><div><h4>Storm MC — Dev</h4><p>Minecraft server development.</p></div></div>
         </div>
-
         <div class="hcards">
-          <h3 class="st" style="font-size:1.45rem;margin:0 0 4px">Current / Collaboration <span class="gt">Projects</span></h3>
-          <div class="hc"><div><h4>Zencraft — Owner</h4><p>Owner and project management.</p></div></div>
-          <div class="hc"><div><h4>Primecraft — Dev</h4><p>Minecraft development.</p></div></div>
-          <div class="hc"><div><h4>ZEN × PRIME — Dev</h4><p>Collaborative development.</p></div></div>
-          <div class="hc"><div><h4>Pyre — Mod Dev</h4><p>Moderation development.</p></div></div>
-          <div class="hc"><div><h4>Tamilgolri — Dev</h4><p>Minecraft development.</p></div></div>
-          <div class="hc"><div><h4>Pyre × Tamilgolri — Dev</h4><p>Collaborative development.</p></div></div>
-          <div class="hc"><div><h4>Pulikesi YT — Dev</h4><p>Development for the creator project.</p></div></div>
-          <div class="hc"><div><h4>Fuga — Dev</h4><p>Minecraft development.</p></div></div>
-          <div class="hc"><div><h4>Pyrix — Mod + Admin</h4><p>Moderation and administration.</p></div></div>
-          <div class="hc"><div><h4>Falcon — Co-Owner</h4><p>Co-owner and project management.</p></div></div>
-          <div class="hc"><div><h4>Luck — Co-Owner</h4><p>Co-owner and project management.</p></div></div>
-          <div class="hc"><div><h4>Other Projects — Various</h4><p>Additional development and collaboration work.</p></div></div>
+          <h3 class="st" style="font-size:1.45rem;margin-bottom:4px">Current / Collaboration <span class="gt">Projects</span></h3>
+          <div class="hc rv"><div><h4>Zencraft — Owner</h4><p>Owner and project management.</p></div></div>
+          <div class="hc rv d1"><div><h4>Primecraft — Dev</h4><p>Minecraft development.</p></div></div>
+          <div class="hc rv d2"><div><h4>ZEN × PRIME — Dev</h4><p>Collaborative development.</p></div></div>
+          <div class="hc rv d3"><div><h4>Pyre — Mod Dev</h4><p>Moderation development.</p></div></div>
+          <div class="hc rv d4"><div><h4>Tamilgolri — Dev</h4><p>Minecraft development.</p></div></div>
+          <div class="hc rv d5"><div><h4>Pyre × Tamilgolri — Dev</h4><p>Collaborative development.</p></div></div>
+          <div class="hc rv"><div><h4>Pulikesi YT — Dev</h4><p>Development for the creator project.</p></div></div>
+          <div class="hc rv d1"><div><h4>Fuga — Dev</h4><p>Minecraft development.</p></div></div>
+          <div class="hc rv d2"><div><h4>Pyrix — Mod + Admin</h4><p>Moderation and administration.</p></div></div>
+          <div class="hc rv d3"><div><h4>Falcon — Co-Owner</h4><p>Co-owner and project management.</p></div></div>
+          <div class="hc rv d4"><div><h4>Luck — Co-Owner</h4><p>Co-owner and project management.</p></div></div>
+          <div class="hc rv d5"><div><h4>Other Projects — Various</h4><p>Additional development and collaboration work.</p></div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <hr class="sec-divider" />
+  <hr class="sec-divider">
 
   <section id="about">
     <div class="wrap">
-      <div class="ey">About Me</div>
-      <h2 class="st">Who is <span class="gt">MC_PLAYER?</span></h2>
+      <div class="ey rv">About Me</div>
+      <h2 class="st rv">Who is <span class="gt">MC_PLAYER?</span></h2>
       <div class="about-grid">
-        <div class="atext">
-          <p>Hey! I'm <strong>MC_PLAYER</strong> — a Minecraft developer, web developer, and YouTuber who's been in the Minecraft world since <strong>2019</strong>. My journey started as a curious player and evolved into building real tools, server systems, and web experiences for communities and creators.</p>
+        <div class="atext rv">
+          <p>Hey! I'm <strong>MC_PLAYER</strong> — a Minecraft developer, web developer, and YouTuber who's been in the Minecraft world since <strong>2019</strong>. My journey started as a curious player and grew into building real servers, community tools, and custom digital experiences.</p>
           <p>I've completed <strong>25+ server projects and collaborations</strong>, building practical experience that I bring to every commission and custom development project.</p>
-          <p>I also build <strong>websites</strong> — 3 built so far, including this very portfolio. Clean, modern, responsive designs from scratch.</p>
+          <p>I also build <strong>websites</strong> — clean, modern, responsive designs from scratch. This portfolio is one of those projects.</p>
           <div class="mc-card">
-            <span style="flex-shrink:0;display:flex;align-items:center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7H14.5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+            <span style="flex-shrink:0;display:flex;align-items:center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg></span>
             <div><h4>3+ Years Experience — building tools that work</h4><p>Minecraft · Discord · Web · WhatsApp · Telegram · Custom Bots</p></div>
           </div>
-          <a href="mailto:rama8rama8kugan@gmail.com" class="btn" style="display:inline-flex"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M3 6l9 7 9-7"/></svg>Send Email</a>
+          <a href="mailto:rama8rama8kugan@gmail.com" class="btn" style="display:inline-flex"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M4 6l8 7 8-7"/></svg>Contact Me</a>
         </div>
-
         <div class="hcards">
-          <div class="hc"><div class="hc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 11V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><rect x="3" y="11" width="18" height="10" rx="2"/></svg></div><div><h4>Server Setup</h4><p>Planning, installing, and optimizing Minecraft server environments.</p></div></div>
-          <div class="hc"><div class="hc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M12 3v18"/><circle cx="12" cy="12" r="8"/></svg></div><div><h4>Bot Automation</h4><p>Discord, WhatsApp, and Telegram automation built for utility and engagement.</p></div></div>
-          <div class="hc"><div class="hc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 2"/><path d="M12 22h8"/></svg></div><div><h4>Reliable Delivery</h4><p>Practical systems with clean architecture and project continuity.</p></div></div>
-          <div class="hc"><div class="hc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/><path d="M8 4v6M16 4v6"/></svg></div><div><h4>Server Management</h4><p>Backups, moderation, configuration, and long-term upkeep.</p></div></div>
-          <div class="hc"><div class="hc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7H14.5a3.5 3.5 0 0 1 0 7H6"/></svg></div><div><h4>Web Development</h4><p>Modern websites, landing pages, portfolios, and community pages.</p></div></div>
+          <div class="hc rv d1"><div class="hc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M2 12h20"/></svg></div><div><h4>Server Design</h4><p>Custom Minecraft server layouts, progression, and player experience.</p></div></div>
+          <div class="hc rv d2"><div class="hc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V7a6 6 0 0 1 12 0v2"/><rect x="3" y="9" width="18" height="12" rx="2"/></svg></div><div><h4>Security &amp; Stability</h4><p>Reliable deployments, cleanup, permissions, management, and support.</p></div></div>
+          <div class="hc rv d3"><div class="hc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div><div><h4>Automation</h4><p>Utility scripts, workflows, task handlers, and streamlined systems.</p></div></div>
+          <div class="hc rv d4"><div class="hc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div><h4>Web Projects</h4><p>Responsive websites and branded landing pages built from scratch.</p></div></div>
+          <div class="hc rv d5"><div class="hc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div><h4>Community Growth</h4><p>Discord communities, moderation strategies, and content-driven engagement.</p></div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <hr class="sec-divider" />
+  <hr class="sec-divider">
 
   <section id="youtube" class="yt-sec">
     <div class="wrap">
-      <div class="ey">Content Creator</div>
-      <h2 class="st">Also a <span class="gt">YouTuber</span></h2>
+      <div class="ey rv">Content Creator</div>
+      <h2 class="st rv">Also a <span class="gt">YouTuber</span></h2>
       <div class="yt-grid">
-        <div class="yt-text">
-          <p>Beyond development, I'm a <strong>Minecraft YouTuber</strong> on <strong>@MC_PLAYER_GGS</strong>. I create content around gameplay, server building tutorials, plugin guides, and behind-the-scenes development work.</p>
+        <div class="yt-text rv">
+          <p>Beyond development, I'm a <strong>Minecraft YouTuber</strong> on <strong>@MC_PLAYER_GGS</strong>. I create content around gameplay, server building tutorials, plugin guides, and behind-the-scenes development.</p>
           <p>My YouTube is an extension of the same passion that drives my work — genuine love for Minecraft and the community. I teach, inspire, and show how professional servers are actually built.</p>
           <p>Want to learn how to set up a server, see real MC builds, or just enjoy Minecraft content — <strong>@MC_PLAYER_GGS</strong> is the place.</p>
           <div class="yt-srow">
@@ -586,59 +675,58 @@
             <div class="yt-stat"><span>🏗️</span><p>Showcases</p></div>
           </div>
           <div class="yt-acts">
-            <a href="https://youtube.com/@MC_PLAYER_GGS" target="_blank" class="btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2A3 3 0 0 0 21.4 4.1C19.5 3.7 12 3.7 12 3.7s-7.5 0-9.4.4A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8A3 3 0 0 0 2.6 19.9c1.9.4 9.4.4 9.4.4s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.8 15.5v-7l6.3 3.5-6.3 3.5z"/></svg>Watch Channel</a>
+            <a href="https://youtube.com/@MC_PLAYER_GGS" target="_blank" class="btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.376.505A3.016 3.016 0 0 0 .502 6.186C0 8.074 0 12 0 12s0 3.926.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.376-.505a3.016 3.016 0 0 0 2.122-2.136C24 15.926 24 12 24 12s0-3.926-.502-5.814zM9.75 15.5v-7l6.25 3.5-6.25 3.5z"/></svg>Watch Channel</a>
             <a href="https://discord.gg/8GsrmXScDV" target="_blank" class="btn-o">Join Community</a>
           </div>
         </div>
-
         <div class="ytfs">
-          <div class="ytf"><div class="ytf-ico ytf-r"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.5 6.2A3 3 0 0 0 21.4 4.1C19.5 3.7 12 3.7 12 3.7s-7.5 0-9.4.4A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8A3 3 0 0 0 2.6 19.9c1.9.4 9.4.4 9.4.4s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.8 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></div><div><h4>MC Gameplay</h4><p>High-energy Minecraft content and community-driven videos.</p></div></div>
-          <div class="ytf"><div class="ytf-ico ytf-p"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v15H6.5A2.5 2.5 0 0 0 4 19.5V4.5A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></div><div><h4>Guides &amp; Tutorials</h4><p>Easy-to-follow server setup and plugin education for players.</p></div></div>
-          <div class="ytf"><div class="ytf-ico ytf-pk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V8l8-4 8 4v12"/><path d="M9 12h6"/><path d="M12 9v6"/><path d="M4 12h16"/></svg></div><div><h4>Build Showcases</h4><p>Creative builds, server visuals, and wow-factor scenes.</p></div></div>
-          <div class="ytf"><div class="ytf-ico ytf-r"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M12 3v18"/><circle cx="12" cy="12" r="9"/></svg></div><div><h4>Community First</h4><p>Focused on helping players grow and learn in Minecraft.</p></div></div>
+          <div class="ytf rv d1"><div class="ytf-ico ytf-r"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.376.505A3.016 3.016 0 0 0 .502 6.186C0 8.074 0 12 0 12s0 3.926.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.376-.505a3.016 3.016 0 0 0 2.122-2.136C24 15.926 24 12 24 12s0-3.926-.502-5.814zM9.75 15.5v-7l6.25 3.5-6.25 3.5z"/></svg></div><div><h4>Video Content</h4><p>Gameplay, tutorials, build showcases, and Minecraft advice for the community.</p></div></div>
+          <div class="ytf rv d2"><div class="ytf-ico ytf-p"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg></div><div><h4>Build Tutorials</h4><p>Practical learning resources to help others create stronger server experiences.</p></div></div>
+          <div class="ytf rv d3"><div class="ytf-ico ytf-pk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V7a6 6 0 0 1 12 0v2"/><rect x="3" y="9" width="18" height="12" rx="2"/></svg></div><div><h4>Server Showcases</h4><p>Real examples of how systems, features, and ideas come together in live projects.</p></div></div>
+          <div class="ytf rv d4"><div class="ytf-ico ytf-r"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div><h4>Community Focus</h4><p>Guidance, support, and inspiration for growth-minded creators and players.</p></div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <hr class="sec-divider" />
+  <hr class="sec-divider">
 
   <section id="services">
     <div class="wrap">
-      <div class="ey">Services</div>
-      <h2 class="st">What I <span class="gt">Offer</span></h2>
-      <p class="sd">Professional delivery, deep knowledge, and long-term support on every project.</p>
+      <div class="ey rv">Services</div>
+      <h2 class="st rv">What I <span class="gt">Offer</span></h2>
+      <p class="sd rv">Professional delivery, deep knowledge, and long-term support on every project.</p>
       <div class="svcs-grid">
-        <div class="svc"><span class="svc-n">01</span><span class="svc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 11V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><rect x="3" y="11" width="18" height="10" rx="2"/></svg></span><h3>Minecraft Server Setup</h3><p>Complete setup, optimization, world configuration, and launch support for reliable servers.</p><div class="svc-tags"><span class="svc-tag">Paper</span><span class="svc-tag">Spigot</span><span class="svc-tag">Purpur</span></div></div>
-        <div class="svc"><span class="svc-n">02</span><span class="svc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span><h3>Plugin Configuration</h3><p>Setup and tuning for permissions, economy, anti-cheat, plugins, and gameplay systems.</p><div class="svc-tags"><span class="svc-tag">LuckPerms</span><span class="svc-tag">Skript</span><span class="svc-tag">Core</span></div></div>
-        <div class="svc"><span class="svc-n">03</span><span class="svc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l18-8-8 18-2-8-8-2z"/></svg></span><h3>Discord Bots</h3><p>Custom Discord tools for moderation, automation, utilities, and community engagement.</p><div class="svc-tags"><span class="svc-tag">Utility</span><span class="svc-tag">Mod</span><span class="svc-tag">Dashboard</span></div></div>
-        <div class="svc"><span class="svc-n">04</span><span class="svc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="M7 10h10M7 14h7"/></svg></span><h3>Automation Tools</h3><p>Time-saving automations for server tasks, Discord management, and workflow efficiency.</p><div class="svc-tags"><span class="svc-tag">Scripts</span><span class="svc-tag">API</span><span class="svc-tag">Dash</span></div></div>
-        <div class="svc svc-new">
+        <div class="svc rv"><span class="svc-n">01</span><span class="svc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V7a6 6 0 0 1 12 0v2"/><rect x="3" y="9" width="18" height="12" rx="2"/></svg></span><h3>Minecraft Server Setup</h3><p>Complete setup and environment configuration for server builds, moderation, and gameplay flows.</p><div class="svc-tags"><span class="svc-tag">Paper</span><span class="svc-tag">Spigot</span><span class="svc-tag">Purpur</span></div></div>
+        <div class="svc rv d1"><span class="svc-n">02</span><span class="svc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span><h3>Plugin Configuration</h3><p>Permission systems, utility plugins, gameplay tuning, and custom build logic for smoother operation.</p><div class="svc-tags"><span class="svc-tag">LuckPerms</span><span class="svc-tag">Skript</span><span class="svc-tag">EssentialsX</span></div></div>
+        <div class="svc rv d2"><span class="svc-n">03</span><span class="svc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7"/><path d="M10 14L21 3"/><path d="M21 14v7H3V3h7"/></svg></span><h3>Proxy &amp; Network Setup</h3><p>Bungee/Velocity and network optimization for multi-server environments with smoother routing.</p><div class="svc-tags"><span class="svc-tag">Bungee</span><span class="svc-tag">Velocity</span><span class="svc-tag">Network</span></div></div>
+        <div class="svc rv d3"><span class="svc-n">04</span><span class="svc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><h3>Discord &amp; Community Tools</h3><p>Custom bots, moderation systems, automations, and organizer workflows for active gaming communities.</p><div class="svc-tags"><span class="svc-tag">Discord.js</span><span class="svc-tag">Bot</span><span class="svc-tag">Automation</span></div></div>
+        <div class="svc svc-new rv d4">
           <div class="new-badge">✨ NEW SERVICE</div>
-          <span class="svc-n">05</span><span class="svc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v15H6.5A2.5 2.5 0 0 0 4 19.5V4.5A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></span>
+          <span class="svc-n">05</span><span class="svc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
           <h3>Website Development</h3>
-          <p>Clean, modern, responsive websites built from scratch — portfolios, server pages, community sites. <strong style="color:var(--text);font-weight:600;">Websites and custom tools built</strong> for real-world needs.</p>
+          <p>Clean, modern, responsive websites built from scratch — portfolios, server pages, community sites. <strong style="color:var(--text);font-weight:600;">websites and custom tools built</strong> for real users.</p>
           <div class="svc-tags"><span class="svc-tag">HTML/CSS/JS</span><span class="svc-tag">Responsive</span><span class="svc-tag">3 Built</span><span class="svc-tag">This Site ✓</span></div>
         </div>
-        <div class="svc"><span class="svc-n">06</span><span class="svc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7.5V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v2.5"/><rect x="2" y="7.5" width="20" height="12" rx="2"/><path d="M8 12h8"/></svg></span><h3>Ongoing Support</h3><p>Reliable project support, site updates, fixes, improvements, and long-term maintenance.</p><div class="svc-tags"><span class="svc-tag">Support</span><span class="svc-tag">Updates</span><span class="svc-tag">Fixes</span></div></div>
+        <div class="svc rv d5"><span class="svc-n">06</span><span class="svc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V7a6 6 0 0 1 12 0v2"/><rect x="3" y="9" width="18" height="12" rx="2"/></svg></span><h3>Automation &amp; Management</h3><p>Task automation, internal systems, support tools, and scheduled scripts that save time.</p><div class="svc-tags"><span class="svc-tag">Scripts</span><span class="svc-tag">Task Flows</span><span class="svc-tag">Support</span></div></div>
       </div>
     </div>
   </section>
 
-  <hr class="sec-divider" />
+  <hr class="sec-divider">
 
   <section>
     <div class="wrap">
-      <div class="ey">Why Choose Me</div>
-      <h2 class="st">Why <span class="gt">MC_PLAYER?</span></h2>
-      <p class="sd">Real experience from real projects — server and website work actually built and deployed.</p>
+      <div class="ey rv">Why Choose Me</div>
+      <h2 class="st rv">Why <span class="gt">MC_PLAYER?</span></h2>
+      <p class="sd rv">Real experience from real projects — servers, websites, and custom tools actually built and deployed.</p>
       <div class="why-grid">
-        <div class="wcard"><span class="wn">Real</span><h4>Real Projects Only</h4><p>Built across actual Minecraft servers and web work with long-term use in mind.</p></div>
-        <div class="wcard"><span class="wn">∞</span><h4>Future Support</h4><p>I don't disappear after delivery. Fixes, updates, improvements — long-term support is standard.</p></div>
-        <div class="wcard"><span class="wn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></span><h4>Quality Focus</h4><p>Every project aims for stability, usability, and a polished player experience.</p></div>
-        <div class="wcard"><span class="wn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><h4>Communication</h4><p>Clear project updates and practical suggestions during development and after launch.</p></div>
-        <div class="wcard"><span class="wn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v7l5 2-5 2v7"/><circle cx="12" cy="12" r="10"/></svg></span><h4>Fast Execution</h4><p>Quick turnaround for useful systems, tools, and community-facing features.</p></div>
-        <div class="wcard"><span class="wn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-4z"/><path d="M9.5 12.5l1.5 1.5 3.5-4"/></svg></span><h4>Trust &amp; Safety</h4><p>Systems are built with reliability in mind so they hold up over time.</p></div>
+        <div class="wcard rv"><span class="wn">Real</span><h4>Real Projects Only</h4><p>25 MC servers and digital tools actually built — from custom communities to web experiences.</p></div>
+        <div class="wcard rv d1"><span class="wn">∞</span><h4>Future Support</h4><p>I don't disappear after delivery. Fixes, updates, improvements, and long-term support are standard.</p></div>
+        <div class="wcard rv d2"><span class="wn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7"/><path d="M10 14L21 3"/><path d="M21 14v7H3V3h7"/></svg></span><h4>Clean Work</h4><p>Professional results, organized systems, and a design approach that makes everything feel more polished.</p></div>
+        <div class="wcard rv d3"><span class="wn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg></span><h4>Digital Breadth</h4><p>From game servers to websites and Discord automation, I work across the full stack of creator tools.</p></div>
+        <div class="wcard rv d4"><span class="wn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10V7a5 5 0 0 1 10 0v3"/><rect x="3" y="10" width="18" height="11" rx="2"/></svg></span><h4>Dependability</h4><p>Every project is built with structure, care, and practical use in mind so things actually hold up.</p></div>
+        <div class="wcard rv d5"><span class="wn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></span><h4>Quality Focus</h4><p>Good tooling, clear structure, and a strong eye for usability make the difference between a basic setup and a real product.</p></div>
       </div>
     </div>
   </section>
@@ -647,23 +735,22 @@
     <div class="wrap">
       <div class="skills-grid">
         <div>
-          <div class="ey">Skills</div>
-          <h2 class="st">My <span class="gt">Expertise</span></h2>
-          <p class="sd" style="margin-bottom:24px">Built year by year since 2019 — real skills from real projects.</p>
+          <div class="ey rv">Skills</div>
+          <h2 class="st rv">My <span class="gt">Expertise</span></h2>
+          <p class="sd rv" style="margin-bottom:24px">Built year by year since 2019 — real skills from real projects.</p>
           <div class="sk-list">
-            <div class="sk-row"><div class="sk-hd"><span class="sk-nm">Server Setup &amp; Design</span><span class="sk-pc">95%</span></div><div class="sk-bar"><div class="sk-fill" data-w="0.95"></div></div></div>
-            <div class="sk-row"><div class="sk-hd"><span class="sk-nm">Plugin Configuration</span><span class="sk-pc">93%</span></div><div class="sk-bar"><div class="sk-fill" data-w="0.93"></div></div></div>
-            <div class="sk-row"><div class="sk-hd"><span class="sk-nm">Proxy Networks (Bungee/Velocity)</span><span class="sk-pc">88%</span></div><div class="sk-bar"><div class="sk-fill" data-w="0.88"></div></div></div>
-            <div class="sk-row"><div class="sk-hd"><span class="sk-nm">Permission Systems</span><span class="sk-pc">92%</span></div><div class="sk-bar"><div class="sk-fill" data-w="0.92"></div></div></div>
-            <div class="sk-row"><div class="sk-hd"><span class="sk-nm">Website Development</span><span class="sk-pc">85%</span></div><div class="sk-bar"><div class="sk-fill" data-w="0.85"></div></div></div>
-            <div class="sk-row"><div class="sk-hd"><span class="sk-nm">Server Management &amp; Optimization</span><span class="sk-pc">87%</span></div><div class="sk-bar"><div class="sk-fill" data-w="0.87"></div></div></div>
+            <div class="sk-row rv"><div class="sk-hd"><span class="sk-nm">Server Setup &amp; Design</span><span class="sk-pc">95%</span></div><div class="sk-bar"><div class="sk-fill" data-w="0.95"></div></div></div>
+            <div class="sk-row rv d1"><div class="sk-hd"><span class="sk-nm">Plugin Configuration</span><span class="sk-pc">93%</span></div><div class="sk-bar"><div class="sk-fill" data-w="0.93"></div></div></div>
+            <div class="sk-row rv d2"><div class="sk-hd"><span class="sk-nm">Proxy Networks (Bungee/Velocity)</span><span class="sk-pc">88%</span></div><div class="sk-bar"><div class="sk-fill" data-w="0.88"></div></div></div>
+            <div class="sk-row rv d3"><div class="sk-hd"><span class="sk-nm">Permission Systems</span><span class="sk-pc">92%</span></div><div class="sk-bar"><div class="sk-fill" data-w="0.92"></div></div></div>
+            <div class="sk-row rv d4"><div class="sk-hd"><span class="sk-nm">Website Development</span><span class="sk-pc">85%</span></div><div class="sk-bar"><div class="sk-fill" data-w="0.85"></div></div></div>
+            <div class="sk-row rv d5"><div class="sk-hd"><span class="sk-nm">Server Management &amp; Optimization</span><span class="sk-pc">87%</span></div><div class="sk-bar"><div class="sk-fill" data-w="0.87"></div></div></div>
           </div>
         </div>
-
         <div class="tools-col">
-          <div class="tgrp"><h3>MC Platforms</h3><div class="tc"><span class="ti">🗂️ Paper</span><span class="ti">🔩 Spigot</span><span class="ti">💜 Purpur</span><span class="ti">🔗 Velocity</span><span class="ti">🌐 Bungee</span></div></div>
-          <div class="tgrp"><h3>Plugins</h3><div class="tc"><span class="ti">🔑 LuckPerms</span><span class="ti">🛠️ EssentialsX</span><span class="ti">📜 Skript</span><span class="ti">🧪 PlaceholderAPI</span><span class="ti">🚫 AntiCheat</span></div></div>
-          <div class="tgrp"><h3>Web &amp; Infrastructure</h3><div class="tc"><span class="ti">🌐 HTML/CSS/JS</span><span class="ti">🐧 Linux</span><span class="ti">🔧 Pterodactyl</span><span class="ti">🧰 Node</span><span class="ti">⚙️ Automation</span></div></div>
+          <div class="tgrp rv"><h3>MC Platforms</h3><div class="tc"><span class="ti">🗂️ Paper</span><span class="ti">🔩 Spigot</span><span class="ti">💜 Purpur</span><span class="ti">🔗 Bungee</span><span class="ti">⚡ Velocity</span></div></div>
+          <div class="tgrp rv d1"><h3>Plugins</h3><div class="tc"><span class="ti">🔑 LuckPerms</span><span class="ti">🛠️ EssentialsX</span><span class="ti">📜 Skript</span><span class="ti">📦 CoreProtect</span><span class="ti">🧰 PlaceholderAPI</span></div></div>
+          <div class="tgrp rv d2"><h3>Web &amp; Infrastructure</h3><div class="tc"><span class="ti">🌐 HTML/CSS/JS</span><span class="ti">🐧 Linux</span><span class="ti">🔧 Pterodactyl</span><span class="ti">📡 Hosting</span><span class="ti">⚙️ Automation</span></div></div>
         </div>
       </div>
     </div>
@@ -671,65 +758,104 @@
 
   <section>
     <div class="wrap">
-      <div class="ey">Work</div>
-      <h2 class="st">Server <span class="gt">Specialties</span></h2>
-      <p class="sd">Game modes I've built — each with deep expertise in what makes them succeed.</p>
+      <div class="ey rv">Work</div>
+      <h2 class="st rv">Server <span class="gt">Specialties</span></h2>
+      <p class="sd rv">Game modes I've built — each with deep expertise in what makes them succeed.</p>
       <div class="work-grid">
-        <div class="wk w1"><div class="wk-top"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></div><div class="wk-body"><span class="wk-type">Survival</span><h3>Survival Servers</h3><p>Dependable, optimized worlds with systems that feel smooth and stable.</p></div></div>
-        <div class="wk w2"><div class="wk-top"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19V5l12 7-12 7z"/></svg></div><div class="wk-body"><span class="wk-type">Skyblock</span><h3>Skyblock &amp; Islands</h3><p>Progression systems, economy flow, and island-friendly design.</p></div></div>
-        <div class="wk w3"><div class="wk-top"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18l3-3 4 4 7-10"/><path d="M20 9V4h-5"/></svg></div><div class="wk-body"><span class="wk-type">Minigames</span><h3>Competitive Modes</h3><p>Fast-paced game loops, score systems, lobbies, and player retention design.</p></div></div>
-        <div class="wk w4"><div class="wk-top"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19l14-14"/><path d="M7 7h10v10"/></svg></div><div class="wk-body"><span class="wk-type">PVP</span><h3>PvP &amp; Arena</h3><p>Competitive experiences tuned for fairness, flow, and engagement.</p></div></div>
-        <div class="wk w5"><div class="wk-top"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M3 12h18"/><circle cx="12" cy="12" r="8"/></svg></div><div class="wk-body"><span class="wk-type">Factions</span><h3>Faction / RPG</h3><p>Progression, economy, team balance, and event-ready infrastructure.</p></div></div>
-        <div class="wk w6"><div class="wk-top"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18"/><path d="M7 10V6h10v4"/><path d="M8 14h8v4H8z"/></svg></div><div class="wk-body"><span class="wk-type">Network</span><h3>Network Builds</h3><p>Proxy, lobby, and multi-server structures for larger player communities.</p></div></div>
+        <div class="wk w1 rv"><div class="wk-top"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><path d="M8 12l2.5 2.5L16 7"/></svg></div><div class="wk-body"><span class="wk-type">PvP</span><h3>Combat &amp; Arena Servers</h3><p>Competitive gameplay loops, progression, balance, and polished player flow.</p></div></div>
+        <div class="wk w2 rv d1"><div class="wk-top"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M12 3v18"/><circle cx="12" cy="12" r="9"/></svg></div><div class="wk-body"><span class="wk-type">Survival</span><h3>World &amp; Economy Builds</h3><p>Resource systems, economy flow, and world design that keeps communities active.</p></div></div>
+        <div class="wk w3 rv d2"><div class="wk-top"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15l5-5 4 4 8-8"/><path d="M14 6h6v6"/></svg></div><div class="wk-body"><span class="wk-type">Minigames</span><h3>Fast-Fun Game Modes</h3><p>Short, repeatable systems across challenge maps, scoring, and event loops.</p></div></div>
+        <div class="wk w4 rv d3"><div class="wk-top"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14c0-4.42 3.58-8 8-8s8 3.58 8 8"/><path d="M4 14c0 4.42 3.58 8 8 8s8-3.58 8-8"/><path d="M12 8v8"/></svg></div><div class="wk-body"><span class="wk-type">Roleplay</span><h3>Community Roleplay Systems</h3><p>Structures for story, social play, economy, and memorable player experiences.</p></div></div>
+        <div class="wk w5 rv d4"><div class="wk-top"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18l7-7 4 4L21 5"/><path d="M14 5h7v7"/></svg></div><div class="wk-body"><span class="wk-type">Progression</span><h3>Leveling &amp; Rewards</h3><p>Progression systems that reward players without breaking the core server tone.</p></div></div>
+        <div class="wk w6 rv d5"><div class="wk-top"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M16 6l6 6-6 6"/></svg></div><div class="wk-body"><span class="wk-type">Custom</span><h3>One-Off Creative Modes</h3><p>Unique game rules or sandbox experiences designed around specific community goals.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="journey" class="tl-sec">
+    <div class="wrap">
+      <div class="ey rv">Journey</div>
+      <h2 class="st rv">My <span class="gt">Timeline</span></h2>
+      <div class="tl">
+        <div class="tl-item">
+          <div class="tl-dot">2019</div>
+          <div class="tl-body tl-hl">
+            <span class="tl-yr">2019</span>
+            <h3>Started in Minecraft &amp; Server Communities</h3>
+            <p>Built my foundation learning server mechanics, gameplay flow, and how communities are shaped through quality systems.</p>
+            <span class="tl-tag tt-sv">Minecraft</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">2021</div>
+          <div class="tl-body">
+            <span class="tl-yr">2021</span>
+            <h3>Started Building Real Projects</h3>
+            <p>Moved from learning to delivery — helping with live server builds, network planning, moderation setup, and community development.</p>
+            <span class="tl-tag tt-sv">Projects</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">2023</div>
+          <div class="tl-body tl-hl">
+            <span class="tl-yr">2023</span>
+            <h3>Expanded Into Discord, Web, and Automation</h3>
+            <p>Started building tools beyond Minecraft, including websites, community systems, and workflow automation for creators and communities.</p>
+            <span class="tl-tag tt-on">Automation</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot og">Now</div>
+          <div class="tl-body tl-og">
+            <span class="tl-yr">Present</span>
+            <h3>Delivering Real, Long-Term Digital Services</h3>
+            <p>Helping creators, communities, and businesses with Minecraft infrastructure, web presence, custom tools, and ongoing support.</p>
+            <span class="tl-tag tt-mc">Live Work</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="upcoming">
     <div class="wrap">
-      <div class="ey">Upcoming</div>
-      <h2 class="st">Apex <span class="gt">Hosting</span></h2>
+      <div class="ey rv">Upcoming</div>
+      <h2 class="st rv">Apex Hosting <span class="gt">Launch</span></h2>
       <div class="ch-card">
         <div>
           <div class="ch-logo">
             <div class="ch-logo-icon">⚡</div>
-            <div class="ch-logo-text">Apex Hosting</div>
+            <div class="ch-logo-text">APEX HOSTING</div>
           </div>
           <div class="ch-tag">Launching Soon</div>
-          <p class="ch-desc"><strong>Apex Hosting</strong> is an upcoming Minecraft hosting and server solution built for players who want cleaner setup, faster support, and stronger reliability.</p>
+          <p class="ch-desc">Apex Hosting is an upcoming Minecraft hosting and server solutions brand focused on <strong>performance, simplicity, and reliability</strong>. Designed for players, communities, and server owners who want their infrastructure to run smoothly without the usual stress.</p>
           <div class="ch-feats">
-            <div class="ch-feat"><div class="ch-feat-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7H14.5a3.5 3.5 0 0 1 0 7H6"/></svg></div><div><h4>Fast Server Launch</h4><p>Quick deployment for survival, network, and custom build setups.</p></div></div>
-            <div class="ch-feat"><div class="ch-feat-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v7l5 2-5 2v7"/><circle cx="12" cy="12" r="10"/></svg></div><div><h4>Performance First</h4><p>Low-latency systems and better server health for active communities.</p></div></div>
-            <div class="ch-feat"><div class="ch-feat-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-4z"/><path d="M9.5 12.5l1.5 1.5 3.5-4"/></svg></div><div><h4>Reliable Support</h4><p>Structured onboarding and practical help when it matters most.</p></div></div>
+            <div class="ch-feat"><div class="ch-feat-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></div><div><h4>Fast Setup</h4><p>Quick server deployment and cleaner onboarding for community owners.</p></div></div>
+            <div class="ch-feat"><div class="ch-feat-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V7a6 6 0 0 1 12 0v2"/><rect x="3" y="9" width="18" height="12" rx="2"/></svg></div><div><h4>Stability First</h4><p>Performance-focused hosting and server management for smooth player experiences.</p></div></div>
+            <div class="ch-feat"><div class="ch-feat-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div><h4>Support-Driven</h4><p>Built around human support, clear workflows, and helping owners succeed long-term.</p></div></div>
           </div>
         </div>
-        <div style="display:flex;align-items:center;justify-content:center">
-          <div class="ch-coming">🚀 Coming soon – more details on launch</div>
-        </div>
+        <div class="ch-coming">⚙️ Launching with a modern control experience and dependable server support</div>
       </div>
     </div>
   </section>
 
-  <section id="journey">
+  <section>
     <div class="wrap">
-      <div class="ey">Journey</div>
-      <h2 class="st">My <span class="gt">Roadmap</span></h2>
+      <div class="ey rv">FAQ</div>
+      <h2 class="st rv">Common <span class="gt">Questions</span></h2>
       <div class="faq-list">
         <div class="fi open">
-          <div class="fq"><span>2019 — Started in Minecraft</span><span class="farr">▾</span></div>
-          <div class="fa"><p>Built my first foundations in the Minecraft community and learned the basics of gameplay, plugins, hosting, and server setup.</p></div>
+          <div class="fq"><span>Do you handle custom requests?</span><span class="farr">⌄</span></div>
+          <div class="fa"><p>Yes — I build and support custom Minecraft server setups, websites, Discord systems, and automation projects based on your exact needs.</p></div>
         </div>
         <div class="fi">
-          <div class="fq"><span>2021 — Real project work began</span><span class="farr">▾</span></div>
-          <div class="fa"><p>Started building practical server systems, tool support, and project management roles for community servers and creator projects.</p></div>
+          <div class="fq"><span>Can you build a website for my community or server?</span><span class="farr">⌄</span></div>
+          <div class="fa"><p>Absolutely. I create responsive, modern, branded website experiences with polished layouts, clear structure, and smooth presentation.</p></div>
         </div>
         <div class="fi">
-          <div class="fq"><span>2023 — Web and automation growth</span><span class="farr">▾</span></div>
-          <div class="fa"><p>Expanded into Discord automation, bot creation, and web development, adding website design and utility tools to my skillset.</p></div>
-        </div>
-        <div class="fi">
-          <div class="fq"><span>2024+ — Delivering polished experiences</span><span class="farr">▾</span></div>
-          <div class="fa"><p>Focused on quality, long-term support, and building more polished server and web experiences for clients and communities.</p></div>
+          <div class="fq"><span>Do you offer support after the project launches?</span><span class="farr">⌄</span></div>
+          <div class="fa"><p>Yes — long-term support is one of my standards. I help with fixes, improvements, and adjustments after launch.</p></div>
         </div>
       </div>
     </div>
@@ -738,12 +864,12 @@
   <section id="contact">
     <div class="wrap">
       <div class="ct-outer">
-        <div class="ct-title">Let’s build something powerful</div>
-        <p class="ct-sub">Need a Minecraft server, Discord bot, WhatsApp automation, Telegram tool, or a clean web presence? I’m ready to help bring your idea to life.</p>
+        <div class="ct-title">Let’s build something powerful.</div>
+        <p class="ct-sub">Need a Minecraft server setup, Discord automation, custom website, or a smarter community tool? I’m ready to help.</p>
         <div class="ct-methods">
-          <a href="https://discord.gg/8GsrmXScDV" target="_blank" class="cm"><span class="cm-ico ci-dc"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.37a19.79 19.79 0 0 0-4.89-1.5c-.2.38-.42.9-.58 1.31a18.4 18.4 0 0 0-9.65 0c-.16-.42-.38-.93-.58-1.31A19.79 19.79 0 0 0 3.7 4.37C1.76 8.03.95 11.57 1.14 15.08A19.98 19.98 0 0 0 8.9 17.1c.45-.63.85-1.3 1.2-2.06-.65-.26-1.27-.57-1.86-.96.16-.11.31-.23.46-.35.58.28 1.2.52 1.83.7.63-.18 1.28-.42 1.88-.72.15.12.3.24.46.35-.6.39-1.22.7-1.87.96.35.76.75 1.43 1.2 2.06A19.98 19.98 0 0 0 22.86 15.08c.19-3.51-.57-7.05-2.56-10.71zM9.89 13.01c-.9 0-1.64-.82-1.64-1.83s.74-1.83 1.64-1.83c.9 0 1.64.82 1.64 1.83s-.74 1.83-1.64 1.83zm4.22 0c-.9 0-1.64-.82-1.64-1.83s.74-1.83 1.64-1.83c.9 0 1.64.82 1.64 1.83s-.74 1.83-1.64 1.83z"/></svg></span><span class="cm-info"><small>Discord</small>MC_PLAYER</span></a>
-          <a href="https://youtube.com/@MC_PLAYER_GGS" target="_blank" class="cm"><span class="cm-ico ci-yt"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2A3 3 0 0 0 21.4 4.1C19.5 3.7 12 3.7 12 3.7s-7.5 0-9.4.4A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8A3 3 0 0 0 2.6 19.9c1.9.4 9.4.4 9.4.4s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.8 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></span><span class="cm-info"><small>YouTube</small>@MC_PLAYER_GGS</span></a>
-          <a href="mailto:rama8rama8kugan@gmail.com" class="cm"><span class="cm-ico ci-em"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M3 6l9 7 9-7"/></svg></span><span class="cm-info"><small>Email</small>rama8rama8kugan@gmail.com</span></a>
+          <a href="https://discord.gg/8GsrmXScDV" target="_blank" class="cm"><span class="cm-ico ci-dc"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.5c-.23.43-.5.99-.68 1.42a18.24 18.24 0 0 0-10.36 0c-.18-.43-.46-.99-.7-1.42A19.76 19.76 0 0 0 3.684 4.37C1.79 8.1.97 11.72 1.2 15.26A19.99 19.99 0 0 0 9.06 17.5c.63-.87 1.2-1.79 1.68-2.76-.92-.35-1.8-.8-2.63-1.38.22-.15.43-.32.63-.49 2.32 1.09 4.87 1.09 7.2 0 .2.17.41.34.63.49-.83.58-1.7 1.03-2.63 1.38.48.97 1.05 1.89 1.68 2.76a20 20 0 0 0 7.86-2.24c.33-4.08-.57-7.67-2.45-10.89zM9.72 13.13c-.9 0-1.63-.82-1.63-1.83s.74-1.83 1.63-1.83c.9 0 1.64.82 1.64 1.83s-.74 1.83-1.64 1.83zm4.56 0c-.9 0-1.63-.82-1.63-1.83s.73-1.83 1.63-1.83c.9 0 1.63.82 1.63 1.83s-.73 1.83-1.63 1.83z"/></svg></span><span class="cm-info"><small>Discord</small>MC_PLAYER</span></a>
+          <a href="https://youtube.com/@MC_PLAYER_GGS" target="_blank" class="cm"><span class="cm-ico ci-yt"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.376.505A3.016 3.016 0 0 0 .502 6.186C0 8.074 0 12 0 12s0 3.926.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.376-.505a3.016 3.016 0 0 0 2.122-2.136C24 15.926 24 12 24 12s0-3.926-.502-5.814zM9.75 15.5v-7l6.25 3.5-6.25 3.5z"/></svg></span><span class="cm-info"><small>YouTube</small>@MC_PLAYER_GGS</span></a>
+          <a href="mailto:rama8rama8kugan@gmail.com" class="cm"><span class="cm-ico ci-em"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M4 6l8 7 8-7"/></svg></span><span class="cm-info"><small>Email</small>rama8rama8kugan@gmail.com</span></a>
         </div>
       </div>
     </div>
@@ -752,12 +878,12 @@
   <footer>
     <div class="wrap">
       <div class="ft">
-        <a href="#" class="ft-logo"><img src="" alt="MC_PLAYER logo" /><span>MC_PLAYER</span></a>
-        <div class="ft-copy">© 2025 MC_PLAYER — Built for Minecraft, Discord, Web &amp; Automation.</div>
+        <a href="#" class="ft-logo"><img src="profile.webp" alt="MC_PLAYER logo" /><span>MC_PLAYER</span></a>
+        <div class="ft-copy">© 2025 MC_PLAYER — Built for servers, communities, and digital projects.</div>
         <div class="ft-links">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <a href="#services">Services</a>
+          <a href="#youtube">YouTube</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -765,14 +891,18 @@
   </footer>
 
   <script>
-    (function() {
+    (function () {
       const themes = ["red", "blue", "green", "orange"];
       const buttons = document.querySelectorAll(".theme-dot");
 
       function setTheme(theme) {
         if (!themes.includes(theme)) theme = "red";
-        if (theme === "red") document.documentElement.removeAttribute("data-theme");
-        else document.documentElement.setAttribute("data-theme", theme);
+
+        if (theme === "red") {
+          document.documentElement.removeAttribute("data-theme");
+        } else {
+          document.documentElement.setAttribute("data-theme", theme);
+        }
 
         localStorage.setItem("mc-player-theme", theme);
 
@@ -793,75 +923,76 @@
       buttons.forEach((button) => {
         button.addEventListener("click", () => setTheme(button.dataset.theme));
       });
-
-      const nav = document.getElementById("nav");
-      const menu = document.getElementById("mobMenu");
-      const hbg = document.getElementById("hbg");
-      if (hbg) {
-        hbg.addEventListener("click", function () {
-          this.classList.toggle("open");
-          menu.classList.toggle("open");
-        });
-      }
-      document.querySelectorAll(".ml").forEach((link) => {
-        link.addEventListener("click", () => {
-          menu.classList.remove("open");
-          hbg.classList.remove("open");
-        });
-      });
-
-      function updateNav() {
-        if (!nav) return;
-        if (window.scrollY > 25) nav.classList.add("sc");
-        else nav.classList.remove("sc");
-      }
-      window.addEventListener("scroll", updateNav, { passive: true });
-      updateNav();
-
-      const progressBar = document.getElementById("scroll-bar");
-      const updateScrollBar = () => {
-        if (!progressBar) return;
-        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-        const pct = maxScroll > 0 ? (window.scrollY / maxScroll) * 100 : 0;
-        progressBar.style.width = pct + "%";
-      };
-      window.addEventListener("scroll", updateScrollBar, { passive: true });
-      updateScrollBar();
-
-      const btt = document.getElementById("btt");
-      const updateBtt = () => {
-        if (!btt) return;
-        btt.classList.toggle("show", window.scrollY > 300);
-      };
-      window.addEventListener("scroll", updateBtt, { passive: true });
-      updateBtt();
-
-      const skillBars = document.querySelectorAll(".sk-fill");
-      const revealSkillBars = () => {
-        skillBars.forEach((bar) => {
-          const w = Number(bar.dataset.w || 0);
-          bar.style.transform = `scaleX(${w})`;
-        });
-      };
-      setTimeout(revealSkillBars, 200);
-
-      const faqItems = document.querySelectorAll(".fi");
-      faqItems.forEach((item) => {
-        item.querySelector(".fq").addEventListener("click", () => {
-          item.classList.toggle("open");
-        });
-      });
-
-      const twText = document.getElementById("tw-text");
-      if (twText) {
-        const words = ["Tools", "Servers", "Bots", "Websites"];
-        let i = 0;
-        setInterval(() => {
-          i = (i + 1) % words.length;
-          twText.textContent = words[i];
-        }, 1800);
-      }
     })();
+
+    const nav = document.getElementById('nav');
+    const hbg = document.getElementById('hbg');
+    const mobMenu = document.getElementById('mobMenu');
+    const ml = document.querySelectorAll('.ml');
+
+    function setMenu(open) {
+      hbg.classList.toggle('open', open);
+      mobMenu.classList.toggle('open', open);
+    }
+
+    hbg.addEventListener('click', () => {
+      const isOpen = hbg.classList.contains('open');
+      setMenu(!isOpen);
+    });
+
+    ml.forEach((link) => {
+      link.addEventListener('click', () => setMenu(false));
+    });
+
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('sc', window.scrollY > 12);
+      const btt = document.getElementById('btt');
+      btt.classList.toggle('show', window.scrollY > 300);
+      const scrollBar = document.getElementById('scroll-bar');
+      const max = document.body.scrollHeight - window.innerHeight;
+      const pct = max > 0 ? (window.scrollY / max) * 100 : 0;
+      scrollBar.style.width = pct + '%';
+    });
+
+    document.querySelectorAll('.sk-fill').forEach((bar) => {
+      const val = Number(bar.dataset.w || 0);
+      requestAnimationFrame(() => bar.style.transform = 'scaleX(' + val + ')');
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('vi');
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.rv').forEach((el) => observer.observe(el));
+
+    document.querySelectorAll('.fi').forEach((item) => {
+      const q = item.querySelector('.fq');
+      q.addEventListener('click', () => {
+        item.classList.toggle('open');
+      });
+    });
+
+    const twWords = ['Tools', 'Servers', 'Bots', 'Websites'];
+    let twIndex = 0;
+    let twChar = 0;
+    const twText = document.getElementById('tw-text');
+    function typeWriter() {
+      const word = twWords[twIndex];
+      twText.textContent = word.slice(0, twChar);
+      twChar++;
+      if (twChar > word.length) {
+        setTimeout(() => {
+          twChar = 0;
+          twIndex = (twIndex + 1) % twWords.length;
+          typeWriter();
+        }, 1100);
+        return;
+      }
+      setTimeout(typeWriter, 120);
+    }
+    typeWriter();
   </script>
 </body>
 </html>
